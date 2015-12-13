@@ -66,6 +66,17 @@ $(document).ready(function() {
         $(".navv").toggleClass("is-visible");
     });
 
+
+  // Image Carousel - plugin
+    $('.image-carousel').slick({
+        slidesToShow: 1,
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 6000,
+        arrows: true,
+        dots: false,
+
+    });
      // Text Carousel - plugin
     $('.text-carousel').slick({
         slidesToShow: 1,

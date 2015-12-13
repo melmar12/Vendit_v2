@@ -1,32 +1,38 @@
-/* ==== Image Carousel ==== */
-.carousel {
-    position: relative;
-    overflow: hidden;
+.image-carousel {
+    /*put background image bc of weird flashing :(*/
+    background-image: url(../assets/Vphoto-1.jpg);
+    background-size: cover;
+    div {
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+    }
+    .slick-next {
+        margin-right: 50px;    
+    }
+    .slick-prev {
+        margin-left: 50px;
+        z-index: 80;
+    }
 }
+
+#photo-11 {background-image: url(../assets/Vphoto-1.jpg);}
+#photo-22 {background-image: url(../assets/Vphoto-2.jpg);}
+#photo-33 {background-image: url(../assets/Vphoto-3.jpg);}
+
 .caption {
-    position: absolute;
+    position: relative;
     width: 700px;
     z-index: 20;
-    margin-top: -220px;
+    margin-top: 440px;
     line-height: 2;
     font-size: 40px;
     font-weight: 700;
     color: white;
-
-}
-.carousel span {
+    span {
     background-color: rgba(169,250,0,.7); 
     padding: 10px;  
-}
-
-#photo-1 {background-image: url(../assets/Vphoto-1.jpg);}
-#photo-2 {background-image: url(../assets/Vphoto-2.jpg);}
-#photo-3 {background-image: url(../assets/Vphoto-3.jpg);}
-
-
-.slides li {
-    background-size: cover;
-    height: 600px;
+    }
 }
 
 @media only screen 
