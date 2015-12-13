@@ -1,0 +1,53 @@
+/* ==== Presets ==== */
+body {
+    margin: 0; 
+}
+/*classes*/
+.flex-box {
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+/*Typography*/
+* {
+    font-family: Roboto, sans-serif;
+}
+h1 {
+    font-weight: 700; 
+    font-size: 30px; 
+    text-align: center; 
+    padding-bottom: 15px; 
+    padding-top: 20px;
+}
+p, a, li {
+    font-size: 16px; 
+    line-height: 30px;
+    text-decoration: none;
+    /* a:hover{} at bottom */
+}
+ul{
+    list-style-type: none;
+}
+.glyphicon {
+    color: #a9fa00; 
+    padding-right: 13px;
+}
+    
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    h1 {
+        font-size: 60px;
+    }
+    .glyphicon-ok {
+        font-size: 40px;
+        padding-right: 30px;
+    }
+    p, a {
+        font-size: 35px;
+        line-height: 1.8;
+    }
+}

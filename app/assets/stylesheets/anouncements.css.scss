@@ -1,0 +1,25 @@
+/* ==== Anouncements ==== */
+.anouncements {
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+    height: 800px;
+
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.anouncements h1 {
+    color: #24334c;
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .anouncements {
+        padding-top: 100px;
+    }
+}

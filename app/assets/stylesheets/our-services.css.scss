@@ -1,0 +1,35 @@
+/* ==== Our Services ==== */
+.services {
+    padding: 0px 20px 100px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.services p {text-indent: 30px;}
+
+.services div {max-width: 800px;}
+
+.services h1, .services ul {color: 25344d}
+
+.services ul { 
+    display: inline-block;
+    font-weight: 700;
+}
+
+.services ul li {
+    color: #57667c;
+    padding: 10px;
+    font-size: 20px;
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .services div {max-width: 900px;}
+    .services ul li {
+        line-height: 2;
+        border-bottom: 1px solid #eee;
+        font-size: 30px;
+    }
+}

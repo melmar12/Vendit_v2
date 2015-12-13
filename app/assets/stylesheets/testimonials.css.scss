@@ -1,0 +1,55 @@
+/* ==== Testimonials ==== */
+.testimonials { 
+    background-image: url(../assets/Vphoto-3.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.testimonials .wrapper {
+    padding-top: 50px;
+    width: 100%;
+    background-color: rgba(37,51,77,.7);
+    height: 210px;
+}
+
+.text-carousel {
+    display: flex;
+    display: -webkit-flex;
+    max-width: 800px;   
+}
+
+ .text-carousel p {
+    padding: 0 150px;
+    color: white;
+    text-indent: 40px;      
+}
+
+.big-quote {
+    height: 30px;
+    position: absolute;
+    margin-left: 140px;
+}
+
+.name {font-style: italic;}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .testimonials .wrapper {
+        height: 450px;
+    }
+    .text-carousel {
+        max-width: 900px;
+    }
+    .text-carousel p {
+        font-size: 40px;
+        text-indent: 100px;
+        line-height: 1.5;
+
+    }
+    .big-quote {
+        height: 60px;
+    }
+}

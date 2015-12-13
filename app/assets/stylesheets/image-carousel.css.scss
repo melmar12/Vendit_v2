@@ -1,0 +1,40 @@
+/* ==== Image Carousel ==== */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.caption {
+    position: absolute;
+    width: 700px;
+    z-index: 20;
+    margin-top: -220px;
+    line-height: 2;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+
+}
+.carousel span {
+    background-color: rgba(169,250,0,.7); 
+    padding: 10px;  
+}
+
+#photo-1 {background-image: url(../assets/Vphoto-1.jpg);}
+#photo-2 {background-image: url(../assets/Vphoto-2.jpg);}
+#photo-3 {background-image: url(../assets/Vphoto-3.jpg);}
+
+
+.slides li {
+    background-size: cover;
+    height: 600px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .caption {
+        font-size: 50px;
+        margin-top: -350px;
+    }
+}

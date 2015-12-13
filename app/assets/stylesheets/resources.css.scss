@@ -1,0 +1,64 @@
+/* ==== Resources ==== */
+.resources {
+    height: 800px;
+    background-color: white;
+    padding-bottom: 50px;
+
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.resources h1, .resources a {
+    color: #24334c;
+}
+.resources-links {
+    padding-bottom: 20px;
+    max-width: 600px;
+
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.resources-links a {
+    width: 200px;
+    padding-left: 30px;
+}
+
+#pdf object {
+    width: 600px;
+    height: 500px;
+    -webkit-overflow-scrolling:touch;
+}
+
+h3 {
+    color: #a9fa00;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .resources {
+    height: 1000px;
+    }
+    .resources-links {
+        max-width: 900px;
+        margin-left: 100px;
+    }
+    .resources-links a {
+        width: 400px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 2;
+        padding: 20px;
+    }
+    h3 {
+        visibility: inherit;;
+    }
+}
