@@ -32,24 +32,3 @@
 }
 
 .name {font-style: italic;}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-}

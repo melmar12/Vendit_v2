@@ -39,26 +39,3 @@ h3 {
     font-weight: 700;
     visibility: hidden;
 }
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-}

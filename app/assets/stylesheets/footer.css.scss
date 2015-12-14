@@ -26,31 +26,4 @@
     text-align: right;
 }
 
-
-/* 
-todo:
-1. weird 1px margin/gutter
-
-
-*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
-}
-
 a:hover {color: #a9fa00; text-decoration: none;}

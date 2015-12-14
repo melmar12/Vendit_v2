@@ -1,17 +1,6 @@
-/* Media Queries */
-/* Update when changes are made in main files*/
+@mixin much-response {
 
-
-/* ----------- iPhone 6 ----------- */
-/* inside main files */
-
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-h1 {
+    h1 {
         font-size: 60px;
     }
     .glyphicon-ok {
@@ -22,7 +11,6 @@ h1 {
         font-size: 35px;
         line-height: 1.8;
     }
-
     .mobile-nav-button {
         visibility: inherit;
     }
@@ -59,11 +47,11 @@ h1 {
     -webkit-animation: none;
     animation: none;
       }
- .caption {
+    .caption {
         font-size: 50px;
         margin-top: -350px;
     }
-      .testimonials .wrapper {
+    .testimonials .wrapper {
         height: 450px;
     }
     .text-carousel {
@@ -73,7 +61,6 @@ h1 {
         font-size: 40px;
         text-indent: 100px;
         line-height: 1.5;
-
     }
     .big-quote {
         height: 60px;
@@ -107,6 +94,7 @@ h1 {
        #map {
         height: 600px;
     }
+    /*todo: fix weird 1px margin/gutter*/
     .contact-info {
         padding-top: 100px;
         height: 600px;
@@ -117,7 +105,30 @@ h1 {
     }
     .copyright {
         font-size: 40px;
-    }
+    }   
+}
+
+
+
+/* ~******~ Media Queries ~******~ */
+
+/* ----------- iPhone 6 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    @include much-response;
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    @include much-response;
 }  
 
 /* ----------- iPhone 5 and 5S ----------- */
@@ -126,113 +137,8 @@ h1 {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 /* ----------- iPhone 4 and 4S ----------- */
@@ -241,113 +147,8 @@ h1 {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 /* ----------- Galaxy S5 ----------- */
@@ -356,113 +157,8 @@ h1 {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 /* ----------- Galaxy S4 ----------- */
@@ -471,113 +167,8 @@ h1 {
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 /* ----------- Galaxy S3 ----------- */
@@ -586,113 +177,8 @@ h1 {
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 /* ----------- HTC One ----------- */
@@ -701,113 +187,8 @@ h1 {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
 
-    .mobile-nav-button {
-        visibility: inherit;
-    }
-    #left-nav, .text-logo { visibility: hidden}
-    .navv {
-        visibility: hidden;
-        position: fixed;
-        margin-bottom: 0px;
-        height: 100%;
-        width: 500px;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links {
-        margin-top: -20px;
-        padding-left: 20px;
-        background-color: transparent;
-        
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-    }
-    .nav-links a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
-    }
-    .is-fixed {
-    -webkit-animation: none;
-    animation: none;
-      }
- .caption {
-        font-size: 50px;
-        margin-top: -350px;
-    }
-      .testimonials .wrapper {
-        height: 450px;
-    }
-    .text-carousel {
-        max-width: 900px;
-    }
-    .text-carousel p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
-
-    }
-    .big-quote {
-        height: 60px;
-    }
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-    .anouncements {
-        padding-top: 100px;
-    }
-    .resources {
-    height: 1000px;
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
-    }
-    .resources-links a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
-    }
-    h3 {
-        visibility: inherit;;
-    }
-       #map {
-        height: 600px;
-    }
-    .contact-info {
-        padding-top: 100px;
-        height: 600px;
-    }
-    .contact-info li {
-        font-size: 27px;
-        line-height: 2.5;
-    }
-    .copyright {
-        font-size: 40px;
-    }
+    @include much-response;
 }  
 
 

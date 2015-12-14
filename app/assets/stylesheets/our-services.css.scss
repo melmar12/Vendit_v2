@@ -21,15 +21,3 @@
     padding: 10px;
     font-size: 20px;
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .services div {max-width: 900px;}
-    .services ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
-        font-size: 30px;
-    }
-}

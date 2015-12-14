@@ -33,21 +33,3 @@ ul{
     color: #a9fa00; 
     padding-right: 13px;
 }
-    
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    
-    h1 {
-        font-size: 60px;
-    }
-    .glyphicon-ok {
-        font-size: 40px;
-        padding-right: 30px;
-    }
-    p, a {
-        font-size: 35px;
-        line-height: 1.8;
-    }
-}
