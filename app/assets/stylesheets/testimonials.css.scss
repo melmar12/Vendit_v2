@@ -4,26 +4,27 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-}
 
-.testimonials .wrapper {
+    .wrapper {
     padding-top: 50px;
     width: 100%;
     background-color: rgba(37,51,77,.7);
     height: 210px;
     @include flex-box;
+    }
 }
+
 
 .text-carousel {
     display: flex;
     display: -webkit-flex;
     max-width: 800px; 
-}
 
- .text-carousel p {
+    p {
     padding: 0 150px;
     color: white;
     text-indent: 40px;      
+    }
 }
 
 .big-quote {

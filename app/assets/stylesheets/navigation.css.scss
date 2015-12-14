@@ -40,13 +40,14 @@
     padding: 9px;
     margin-top: 10px;
     background-color: rgba(63,77,101,.4);
-}
 
-.nav-links a {
+    a {
     text-decoration: none;
     color: white;
     margin-left: 15px; 
+  }
 }
+
 .mobile-nav-button {
     visibility: hidden;
     position: fixed;

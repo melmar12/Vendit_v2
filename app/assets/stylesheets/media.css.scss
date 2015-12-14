@@ -36,12 +36,13 @@
         display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
-    }
-    .nav-links a {
+
+        a {
         width: 400px;
         font-size: 50px;
         line-height: 3;
         border-bottom: 1px solid grey;    
+        }
     }
     .is-fixed {
     -webkit-animation: none;
@@ -56,20 +57,24 @@
     }
     .text-carousel {
         max-width: 900px;
-    }
-    .text-carousel p {
+
+        p {
         font-size: 40px;
         text-indent: 100px;
         line-height: 1.5;
+        }
     }
     .big-quote {
         height: 60px;
     }
-    .services div {max-width: 900px;}
-    .services ul li {
+    .services {
+        div {max-width: 900px;}
+        
+        .ul li {
         line-height: 2;
         border-bottom: 1px solid #eee;
         font-size: 30px;
+        }
     }
     .anouncements {
         padding-top: 100px;
@@ -80,28 +85,30 @@
     .resources-links {
         max-width: 900px;
         margin-left: 100px;
-    }
-    .resources-links a {
+
+        a {
         width: 400px;
         font-weight: 700;
         font-size: 30px;
         line-height: 2;
         padding: 20px;
+        }
     }
     h3 {
         visibility: inherit;;
     }
-       #map {
+    #map {
         height: 600px;
     }
     /*todo: fix weird 1px margin/gutter*/
     .contact-info {
         padding-top: 100px;
         height: 600px;
-    }
-    .contact-info li {
+
+        li {
         font-size: 27px;
         line-height: 2.5;
+        }
     }
     .copyright {
         font-size: 40px;
@@ -117,7 +124,6 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-
     @include much-response;
 }
 
@@ -127,7 +133,6 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) {
-
     @include much-response;
 }  
 
@@ -137,7 +142,6 @@
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
     @include much-response;
 }  
 
@@ -147,7 +151,6 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
     @include much-response;
 }  
 
@@ -157,7 +160,6 @@
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-
     @include much-response;
 }  
 
@@ -167,7 +169,6 @@
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-
     @include much-response;
 }  
 
@@ -177,7 +178,6 @@
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
-
     @include much-response;
 }  
 
@@ -187,7 +187,6 @@
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-
     @include much-response;
 }  
 

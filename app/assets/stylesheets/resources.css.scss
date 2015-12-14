@@ -9,10 +9,12 @@
     align-items: center;
     -webkit-align-items: center;
     @include flex-box;
-}
-.resources h1, .resources a {
+
+    h1, a {
     color: #24334c;
+    }
 }
+
 .resources-links {
     padding-bottom: 20px;
     max-width: 600px;
@@ -22,11 +24,11 @@
     flex-direction: row;
     -webkit-flex-direction: row;
     flex-wrap: wrap;
-}
 
-.resources-links a {
+    a {
     width: 200px;
     padding-left: 30px;
+    }
 }
 
 #pdf object {

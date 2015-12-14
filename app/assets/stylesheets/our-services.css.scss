@@ -4,21 +4,21 @@
     background-color: white;
     border-bottom: 1px solid #e8e8e8;
     @include flex-box;
-}
 
-.services p {text-indent: 30px;}
+	p {text-indent: 30px;}
 
-.services div {max-width: 800px;}
-
-.services h1, .services ul {color: 25344d}
-
-.services ul { 
+	div {max-width: 800px;}
+	
+	h1, ul {color: 25344d}
+	
+	ul { 
     display: inline-block;
     font-weight: 700;
-}
-
-.services ul li {
+	}
+	
+	ul li {
     color: #57667c;
     padding: 10px;
     font-size: 20px;
+    }
 }

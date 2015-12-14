@@ -11,8 +11,6 @@
     padding-top: 200px;
     padding-bottom: 50px;
     @include flex-box;
-}
 
-.anouncements h1 {
-    color: #24334c;
+    h1 {color: #24334c;}
 }

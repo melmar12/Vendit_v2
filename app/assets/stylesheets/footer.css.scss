@@ -14,12 +14,13 @@
     background-color: rgba(37,51,77,.7);
     position: absolute;
     z-index: 7;
-}
 
-.contact-info a {
+    a {
     color: white;
     @include flex-box;
+    }
 }
+
 .copyright {
     padding: 10px 10px 1px 0px;
     line-height: 20px;
