@@ -18,6 +18,7 @@
 
 .contact-info a {
     color: white;
+    @include flex-box;
 }
 .copyright {
     padding: 10px 10px 1px 0px;

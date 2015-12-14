@@ -8,6 +8,7 @@
     -webkit-flex-direction: column;
     align-items: center;
     -webkit-align-items: center;
+    @include flex-box;
 }
 .resources h1, .resources a {
     color: #24334c;
