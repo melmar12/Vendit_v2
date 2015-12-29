@@ -1,0 +1,51 @@
+.post {
+    border-bottom: 1px solid lightgray;
+    max-width: 800px;
+    
+    h2, p {display: inline-block}
+    h2 {
+        font-size: 22px;
+        color: $blue2
+    }
+    .date { 
+        float: right;
+        color: darkgrey;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+#manage-view {
+    padding-top: 200px;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    h1 {
+        color: $blue1;
+        padding-bottom: 0px
+    }
+    .create {
+        border: 2px solid $green-color;
+        padding: 3px 5px 3px 5px;
+        color: $green-color;
+        font-weight: 700;
+    }
+    a {color: $blue1}
+    .del {color: red}
+}
+
+#parent-view {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    div {max-width: 800px;}
+    .post {
+        padding-bottom: 20px;
+    }
+        
+}
+

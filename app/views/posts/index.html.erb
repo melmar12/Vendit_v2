@@ -1,17 +1,19 @@
-<div style="padding:200px;">:D</div>
-<h1>All Posts</h1>
-	<%= link_to 'Create New Post', new_post_path %>
-
+<div id="manage-view">
+    <h1>All Posts</h1>
+    
+    <%= link_to 'Create New Post', new_post_path, class: 'create' %>
 
 	<div>
 		<% @post.each do |post| %>
+            <div class="post">
 			<h2><%= post.title %></h2>
-			<div><%= post.body %></div>
-			<p><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y") %></p>
-			<%= link_to 'read post', post %>
-			<%= link_to 'edit post', edit_post_path(post) %>
-
-			<%= link_to 'delete post', post_path(post), method: :delete, data: { confirm: 'are you sure?'} %>
-			<br>
+                <p class="date"><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></p>
+            <div><%= post.body %></div>    
+            <br>
+            <%= link_to 'view', post %> | 
+			<%= link_to 'edit', edit_post_path(post) %> | 
+			<%= link_to 'delete', post_path(post), method: :delete, data: { confirm: 'are you sure?'}, class: 'del' %>
+           </div>
 		<% end %>
 	</div>
+</div>

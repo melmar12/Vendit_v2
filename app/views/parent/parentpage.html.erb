@@ -2,6 +2,24 @@
             <h1>ANOUNCEMENTS</h1>
                     <a class="twitter-timeline" href="https://twitter.com/FortBendISD" data-widget-id="638832779543711744" data-chrome="noheader nofooter noborders">Tweets by @FortBendISD</a>                    
 </div>
+
+
+<div id="parent-view">
+    <div>
+        <% @post.each do |post| %>  
+            <div class="post">
+                <h2><%= post.title %></h2>
+                <p class="date"><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></p>
+                <div><%= post.body %></div>    
+            </div>
+        <% end %>
+    </div>
+    
+</div>
+
+
+
+
             
         <div id="resource" class="resources">
             <h1>RESOURCES</h1>
