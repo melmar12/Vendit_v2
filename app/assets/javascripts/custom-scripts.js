@@ -4,6 +4,8 @@ TODO:
 - reorganize code order
 */
 
+/*
+
 $(window).load(function() {
     // Image Carousel - plugin 
     $('.flexslider').flexslider( {
@@ -109,7 +111,7 @@ window.addEventListener('scroll', stickyScroll, false);
 
 
     
-
+*/
 
 
 
