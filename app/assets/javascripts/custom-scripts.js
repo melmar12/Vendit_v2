@@ -44,7 +44,7 @@ function initMap() {
 $(document).ready(function() {
     // Resources Links
     $(".resources a").click(function() {
-             $('#pdf_content').attr("data", "../assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+             $('.pdf_content').attr("data", "../assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
     });
     
     
