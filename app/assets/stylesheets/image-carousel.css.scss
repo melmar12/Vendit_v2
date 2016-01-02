@@ -17,9 +17,9 @@
     }
 }
 
-#photo-11 {background-image: url(../assets/Vphoto-1.jpg);}
-#photo-22 {background-image: url(../assets/Vphoto-2.jpg);}
-#photo-33 {background-image: url(../assets/Vphoto-3.jpg);}
+#photo-11 {background-image: image-url("Vphoto-1");}
+#photo-22 {background-image: image-url("Vphoto-2");}
+#photo-33 {background-image: image-url("Vphoto-3");}
 
 .caption {
     position: relative;
