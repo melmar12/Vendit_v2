@@ -11,7 +11,7 @@ $(window).load(function() {
         animation: "slide",
     });
     
-   
+   alert("window load werkin");
 });
 
 
@@ -101,7 +101,7 @@ function stickyScroll(e) {
 }
 
 
-
+alert("werkin");
 
 
 
