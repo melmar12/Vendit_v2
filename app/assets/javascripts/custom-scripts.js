@@ -102,7 +102,10 @@ function stickyScroll(e) {
 
 window.addEventListener('scroll', stickyScroll, false);
 
-
+console.log("custom-scripts loaded.");
+function test() {
+    console.log("this function ran");
+}
     
 
 
