@@ -10,8 +10,6 @@ $(window).load(function() {
     $('.flexslider').flexslider( {
         animation: "slide",
     });
-    
-   alert("window load werkin");
 });
 
 
@@ -100,8 +98,6 @@ function stickyScroll(e) {
   }
 }
 
-
-alert("werkin");
 
 
 
