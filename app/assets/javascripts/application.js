@@ -15,4 +15,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.slick
+//= require custom-scripts
 //= require_tree .
