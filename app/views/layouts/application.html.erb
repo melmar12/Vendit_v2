@@ -6,6 +6,7 @@
    <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">     
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
    <!-- google fonts -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
@@ -61,7 +62,6 @@
 
 
    <!-- google maps --> 
-     <%= javascript_include_tag 'application' %>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6J6WFaD2V_bYZNIN6499yEtedZA5qW50&callback=initMap">
     </script> 
