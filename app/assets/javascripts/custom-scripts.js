@@ -100,8 +100,6 @@ function stickyScroll(e) {
 
 
 
-
-
 window.addEventListener('scroll', stickyScroll, false);
 
 

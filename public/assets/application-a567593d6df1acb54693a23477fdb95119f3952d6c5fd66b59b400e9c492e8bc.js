@@ -14374,8 +14374,6 @@ $(window).load(function() {
     $('.flexslider').flexslider( {
         animation: "slide",
     });
-    
-   
 });
 
 
@@ -14466,10 +14464,6 @@ function stickyScroll(e) {
 
 
 
-
-
-
-
 window.addEventListener('scroll', stickyScroll, false);
 
 
@@ -14502,6 +14496,7 @@ window.addEventListener('scroll', stickyScroll, false);
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 
 
 
