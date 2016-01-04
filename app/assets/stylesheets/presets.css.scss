@@ -1,10 +1,8 @@
-/* mixins */
-@mixin flex-box {
-    display: flex;
-    display: -webkit-flex; 
-    justify-content: center;
-    -webkit-justify-content: center;
+body {
+    margin: 0; 
 }
+
+/* mixins */
 @mixin flex-box-column {
     display: flex;
     align-items: center;
@@ -21,22 +19,16 @@
 @mixin btn-hover {
         color: white;
         background-color: $green-color;
-    }
+}
 
 
 
 
 /* variables */
 /*todo: use more var magic*/
-$green-color: #a9fa00;
+$green-color: #a9fa00; /*get rid of '-color'*/
 $blue1: #404e66;
 $blue2: #25334d;
-
-
-body {
-    margin: 0; 
-}
-
 
 
 
