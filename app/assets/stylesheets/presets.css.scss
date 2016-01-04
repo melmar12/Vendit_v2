@@ -18,7 +18,10 @@
     font-weight: 700;
     background-color: white;    
 }
-
+@mixin btn-hover {
+        color: white;
+        background-color: $green-color;
+    }
 
 
 
