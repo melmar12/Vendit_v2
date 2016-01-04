@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pdf_views/cal-2015'
+
   #get 'posts/index'
 
   resources :posts
