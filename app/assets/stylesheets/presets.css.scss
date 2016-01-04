@@ -5,6 +5,24 @@
     justify-content: center;
     -webkit-justify-content: center;
 }
+@mixin flex-box-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin btn-theme {
+    border: 2px solid $green-color;
+    padding: 3px 5px 3px 5px;
+    margin-bottom: 20px; 
+    color: $green-color;
+    font-weight: 700;
+    background-color: white;    
+}
+
+
+
+
+
 /* variables */
 /*todo: use more var magic*/
 $green-color: #a9fa00;
@@ -15,6 +33,9 @@ $blue2: #25334d;
 body {
     margin: 0; 
 }
+
+
+
 
 /*Typography*/
 * {

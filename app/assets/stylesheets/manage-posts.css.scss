@@ -14,27 +14,30 @@
     }
 }
 
-
-
-
 #manage-view {
+    @include flex-box-column;
     padding-top: 200px;    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     
     h1 {
         color: $blue1;
         padding-bottom: 0px
     }
     .create-btn {
-        border: 2px solid $green-color;
-        padding: 3px 5px 3px 5px;
-        margin-bottom: 20px;
-        color: $green-color;
-        font-weight: 700;
+        @include btn-theme
     }
     a {color: $blue1}
     .del {color: red}
 }
 
+.form-view {
+    @include flex-box-column;
+    padding-top: 200px;
+
+    input, textarea {
+        width: 800px;
+    }
+
+    .submit-btn {
+        @include btn-theme
+    }
+}
