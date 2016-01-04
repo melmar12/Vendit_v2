@@ -22,6 +22,7 @@ function initMap() {
         center: {lat: 29.613616, lng: -95.556722},
         zoom: 15,
         zoomControl: true,
+        mapTypeControl: false,
         zoomControlOptions: {
             position: google.maps.ControlPosition.TOP_CENTER
         },
