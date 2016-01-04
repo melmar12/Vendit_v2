@@ -1,6 +1,4 @@
-/* ==== Footer ==== */
 .footer {
-    --padding-top: 1px;
     color: white;
     background-color: #404e66;
 }
@@ -17,7 +15,7 @@
 
     a {
     color: white;
-    @include flex-box;
+    @include flex-box-column;
     }
 }
 

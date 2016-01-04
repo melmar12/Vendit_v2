@@ -1,8 +1,7 @@
-/* ==== Our Services ==== */
 .services {
+	@include flex-box-column;
     padding: 0px 20px 100px 20px;
     background-color: white;
-    @include flex-box;
 
 	p {text-indent: 30px;}
 

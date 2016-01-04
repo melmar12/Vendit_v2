@@ -1,14 +1,8 @@
-/* ==== Resources ==== */
 .resources {
+    @include flex-box-column;
     height: 800px;
     background-color: white;
     padding-bottom: 50px;
-
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    align-items: center;
-    -webkit-align-items: center;
-    @include flex-box;
 
     h1, a {
     color: #24334c;
