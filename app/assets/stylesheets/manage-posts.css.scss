@@ -1,5 +1,5 @@
 .post {
-    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
     max-width: 800px;
     
     h2, p {display: inline-block}
@@ -27,25 +27,14 @@
         color: $blue1;
         padding-bottom: 0px
     }
-    .create {
+    .create-btn {
         border: 2px solid $green-color;
         padding: 3px 5px 3px 5px;
+        margin-bottom: 20px;
         color: $green-color;
         font-weight: 700;
     }
     a {color: $blue1}
     .del {color: red}
-}
-
-#parent-view {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    div {max-width: 800px;}
-    .post {
-        padding-bottom: 20px;
-    }
-        
 }
 
