@@ -35,16 +35,16 @@
 }
 
 .nav-links {
-    marggin-left: 10px;
+  marggin-left: 10px;
     padding: 9px;
     margin-top: 10px;
     @include rgbaBlue2(.4);
 
     a {
-    text-decoration: none;
-    color: white;
-    margin-left: 15px; 
-  }
+      text-decoration: none;
+      color: white;
+      margin-left: 15px; 
+    }
 }
 
 .mobile-nav-button {

@@ -70,7 +70,7 @@
         .ul li {
             line-height: 2;
             border-bottom: 1px solid #eee;
-            font-size: 2em;
+            font-size: 3em;
         }
     }
     .post {
@@ -87,15 +87,6 @@
     .anouncements {
         padding-top: 100px;
     }
-
-
-
-
-
-
-
-
-
     .resources {
         height: 1000px;
         .resources-links {
@@ -110,17 +101,13 @@
                 padding: 20px;
             }
         }
+        #pdf object {
+            width: 800px;
+        }
     }
     h3 {
         visibility: inherit;;
     }
-
-
-
-
-
-
-
     #map {
         height: 600px;
     }
@@ -130,10 +117,9 @@
         height: 500px;
         width: 100%;
         background-color: $blue1;
-        a {line-height: normal;}
         li {
-        font-size: 3em;
-        line-height: 1.5;
+            font-size: 3em;
+            line-height: 1.5;
         }
     }
     .copyright {

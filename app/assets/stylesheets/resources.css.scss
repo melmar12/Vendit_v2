@@ -5,6 +5,7 @@
     padding-bottom: 50px;
 
     h1, a {color: $blue2;}
+    h1 {padding-bottom: 30px}
     .open-btn {
         visibility: hidden;
         @include btn-theme;
@@ -14,31 +15,27 @@
         line-height: 2.5;
     }
     .open-btn:hover {@include btn-hover;}
+    .resources-links {
+        padding-bottom: 0px;
+        max-width: 600px;
 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-.resources-links {
-    padding-bottom: 20px;
-    max-width: 600px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    a {
-    width: 200px;
-    padding-left: 30px;
+        a {
+            width: 200px;
+            padding-left: 30px;
+        }
     }
-}
-
-#pdf object {
-    width: 600px;
-    height: 500px;
-    -webkit-overflow-scrolling:touch;
-}
-
-h3 {
-    color: $green1;
-    font-weight: 700;
-    visibility: hidden;
-}
+    #pdf object {
+        width: 600px;
+        height: 500px;
+        -webkit-overflow-scrolling:touch;
+    }
+    h3 {
+        color: $green1;
+        font-weight: 700;
+        visibility: hidden;
+    }
 }
