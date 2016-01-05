@@ -25,9 +25,7 @@
         width: 500px;
         
         display: flex;
-        display: -webkit-flex;
         flex-direction: column;
-        -webkit-flex-direction: column;
     }
     .nav-links {
         margin-top: -20px;
@@ -35,9 +33,7 @@
         background-color: transparent;
         
         display: flex;
-        display: -webkit-flex;
         flex-direction: column;
-        -webkit-flex-direction: column;
 
         a {
         width: 400px;
@@ -47,7 +43,6 @@
         }
     }
     .is-fixed {
-    -webkit-animation: none;
     animation: none;
       }
     .caption {
