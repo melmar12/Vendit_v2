@@ -25,7 +25,7 @@ body {
 
 
 /* variables */
-/*todo: use more var magic*/
+/*next time name them "accent, color1, color2 etc.. */
 $green1: #a9fa00;
 $blue1: #404e66;
 @mixin rgbaBlue1($a) {background-color: rgba(63,77,101,$a);}
