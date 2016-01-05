@@ -36,14 +36,14 @@
         flex-direction: column;
 
         a {
-        width: 400px;
-        font-size: 50px;
-        line-height: 3;
-        border-bottom: 1px solid grey;    
+            width: 400px;
+            font-size: 50px;
+            line-height: 3;
+            border-bottom: 1px solid grey;    
         }
     }
     .is-fixed {
-    animation: none;
+        animation: none;
       }
     .caption {
         font-size: 50px;
@@ -57,9 +57,9 @@
         max-width: 900px;
 
         p {
-        font-size: 40px;
-        text-indent: 100px;
-        line-height: 1.5;
+            font-size: 40px;
+            text-indent: 100px;
+            line-height: 1.5;
         }
     }
     .big-quote {
@@ -68,9 +68,21 @@
     .services {
         div {max-width: 900px;}
         .ul li {
-        line-height: 2;
-        border-bottom: 1px solid #eee;
+            line-height: 2;
+            border-bottom: 1px solid #eee;
+            font-size: 2em;
         }
+    }
+    .post {
+        h2, p, div {
+            font-size: 3.5em;
+            display: block;
+        }
+        .date { 
+            float: left;
+            padding-left: 0px;
+        }
+        div {float: left;}
     }
     .anouncements {
         padding-top: 100px;
@@ -94,19 +106,22 @@
         visibility: inherit;;
     }
     #map {
-        height: 600px;
+        height: 300px;
     }
     .contact-info {
-        padding-top: 100px;
-        height: 600px;
+        position: relative;
+        @include flex-box-column;
+        height: 500px;
+        width: 100%;
+        background-color: $blue1;
 
         li {
-        font-size: 27px;
-        line-height: 2.5;
+        font-size: 3em;
+        line-height: 1.5;
         }
     }
     .copyright {
-        font-size: 40px;
+        font-size: 1em;
     }   
 }
 
