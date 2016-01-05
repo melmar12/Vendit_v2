@@ -9,16 +9,16 @@ body {
     flex-direction: column;
 }
 @mixin btn-theme {
-    border: 2px solid $green-color;
+    border: 2px solid $green1;
     padding: 3px 5px 3px 5px;
     margin-bottom: 20px; 
-    color: $green-color;
+    color: $green1;
     font-weight: 700;
     background-color: white;    
 }
 @mixin btn-hover {
         color: white;
-        background-color: $green-color;
+        background-color: $green1;
 }
 
 
@@ -26,9 +26,11 @@ body {
 
 /* variables */
 /*todo: use more var magic*/
-$green-color: #a9fa00; /*get rid of '-color'*/
+$green1: #a9fa00;
 $blue1: #404e66;
+@mixin rgbaBlue1($a) {background-color: rgba(63,77,101,$a);}
 $blue2: #25334d;
+@mixin rgbaBlue2($a) {background-color: rgba(37,51,77,$a);}
 
 
 
@@ -53,6 +55,6 @@ ul{
     list-style-type: none;
 }
 .glyphicon {
-    color: $green-color; 
+    color: $green1; 
     padding-right: 13px;
 }

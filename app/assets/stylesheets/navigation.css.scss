@@ -1,6 +1,6 @@
 .navv {
     height: 163px;
-    background-color: rgba(63,77,101,.8);
+    @include rgbaBlue2(.8);
     color: white;
     margin-bottom: -200px;
     z-index: 100;
@@ -38,7 +38,7 @@
     marggin-left: 10px;
     padding: 9px;
     margin-top: 10px;
-    background-color: rgba(63,77,101,.4);
+    @include rgbaBlue2(.4);
 
     a {
     text-decoration: none;
@@ -57,14 +57,14 @@
     font-size: 6em;
 }
 
-/*toggle class*/
+/*toggle class (for nav animation)*/
 .is-fixed {
     position: fixed;
     font-size: 25px;
     margin-top: -110px;
     width: 100%;
     padding: 25px 0px 20px 0px;
-    background-color: rgba(63,77,101,.9);
+    @include rgbaBlue2(.9);
     -webkit-animation: slideInDown 5s;
     animation: slideInDown .2s;
 

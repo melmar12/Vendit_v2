@@ -4,9 +4,7 @@
     background-color: white;
     padding-bottom: 50px;
 
-    h1, a {
-    color: #24334c;
-    }
+    h1, a {color: $blue2;}
 }
 
 .resources-links {
@@ -30,7 +28,7 @@
 }
 
 h3 {
-    color: #a9fa00;
+    color: $green1;
     font-weight: 700;
     visibility: hidden;
 }

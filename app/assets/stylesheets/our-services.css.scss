@@ -4,18 +4,14 @@
     background-color: white;
 
 	p {text-indent: 30px;}
-
 	div {max-width: 800px;}
-	
-	h1, ul {color: 25344d}
-	
+	h1 {color: $blue1}
 	ul { 
     display: inline-block;
     font-weight: 700;
 	}
-	
 	ul li {
-    color: #57667c;
+    color: $blue1;
     padding: 10px;
     font-size: 20px;
     }

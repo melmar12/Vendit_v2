@@ -5,11 +5,11 @@
     overflow: hidden;
 
     .wrapper {
+    @include flex-box-column;
     padding-top: 50px;
     width: 100%;
-    background-color: rgba(37,51,77,.7);
+    @include rgbaBlue2(.7);
     height: 210px;
-    @include flex-box-column;
     }
 }
 
