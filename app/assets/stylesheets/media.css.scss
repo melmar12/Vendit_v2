@@ -73,11 +73,6 @@
             font-size: 2em;
         }
     }
-
-
-
-
-
     .post {
         h2, p, div {
             font-size: 3.5em;
@@ -94,18 +89,25 @@
     }
 
 
-    .resources {
-    }
-    .resources-links {
-        max-width: 900px;
-        margin-left: 100px;
 
-        a {
-        width: 400px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 2;
-        padding: 20px;
+
+
+
+
+
+
+    .resources {
+        .resources-links {
+            max-width: 900px;
+            margin-left: 100px;
+
+            a {
+                width: 400px;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 2;
+                padding: 20px;
+            }
         }
     }
     h3 {
