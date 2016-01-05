@@ -81,19 +81,19 @@
     .post {
         h2, p, div {
             font-size: 3.5em;
+            display: block;
         }
         .date { 
-            float: left;
+            float: none;
             padding-left: 0px;
         }
-        div {float: left;}
     }
 
     .anouncements {
         padding-top: 100px;
     }
 
-    
+
     .resources {
     }
     .resources-links {
