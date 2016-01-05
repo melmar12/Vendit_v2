@@ -21,15 +21,14 @@ body {
 
 /* mixins */
 /* variables */
-/*todo: use more var magic*/
-/*get rid of '-color'*/
+/*next time name them "accent, color1, color2 etc.. */
 /*Typography*/
-/* line 36, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
+/* line 38, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
 * {
   font-family: Roboto, sans-serif;
 }
 
-/* line 39, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
+/* line 41, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
 h1 {
   font-weight: 700;
   font-size: 30px;
@@ -38,7 +37,7 @@ h1 {
   padding-top: 20px;
 }
 
-/* line 46, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
+/* line 48, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
 p, a, li {
   font-size: 16px;
   line-height: 30px;
@@ -46,12 +45,12 @@ p, a, li {
   /* a:hover{} at bottom */
 }
 
-/* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
+/* line 54, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
+/* line 57, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/presets.css.scss */
 .glyphicon {
   color: #a9fa00;
   padding-right: 13px;
@@ -60,7 +59,7 @@ ul {
 /* line 1, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/navigation.css.scss */
 .navv {
   height: 163px;
-  background-color: rgba(63, 77, 101, 0.8);
+  background-color: rgba(37, 51, 77, 0.8);
   color: white;
   margin-bottom: -200px;
   z-index: 100;
@@ -103,7 +102,7 @@ ul {
   marggin-left: 10px;
   padding: 9px;
   margin-top: 10px;
-  background-color: rgba(63, 77, 101, 0.4);
+  background-color: rgba(37, 51, 77, 0.4);
 }
 /* line 43, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/navigation.css.scss */
 .nav-links a {
@@ -125,7 +124,7 @@ ul {
   font-size: 6em;
 }
 
-/*toggle class*/
+/*toggle class (for nav animation)*/
 /* line 61, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/navigation.css.scss */
 .is-fixed {
   position: fixed;
@@ -133,7 +132,7 @@ ul {
   margin-top: -110px;
   width: 100%;
   padding: 25px 0px 20px 0px;
-  background-color: rgba(63, 77, 101, 0.9);
+  background-color: rgba(37, 51, 77, 0.9);
   -webkit-animation: slideInDown 5s;
   animation: slideInDown .2s;
 }
@@ -269,7 +268,7 @@ ul {
 }
 /* line 9, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/about-us.css.scss */
 .about h1 {
-  color: #404e66;
+  color: #25334d;
 }
 /* line 10, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/about-us.css.scss */
 .about a {
@@ -285,10 +284,6 @@ ul {
 }
 /* line 7, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/testimonials.css.scss */
 .testimonials .wrapper {
-  padding-top: 50px;
-  width: 100%;
-  background-color: rgba(37, 51, 77, 0.7);
-  height: 210px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -302,6 +297,10 @@ ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 50px;
+  width: 100%;
+  background-color: rgba(37, 51, 77, 0.7);
+  height: 210px;
 }
 
 /* line 17, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/testimonials.css.scss */
@@ -353,22 +352,22 @@ ul {
 .services p {
   text-indent: 30px;
 }
-/* line 8, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
+/* line 7, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
 .services div {
   max-width: 800px;
 }
-/* line 10, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
-.services h1, .services ul {
-  color: 25344d;
+/* line 8, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
+.services h1 {
+  color: #404e66;
 }
-/* line 12, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
+/* line 9, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
 .services ul {
   display: inline-block;
   font-weight: 700;
 }
-/* line 17, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
+/* line 13, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/our-services.css.scss */
 .services ul li {
-  color: #57667c;
+  color: #404e66;
   padding: 10px;
   font-size: 20px;
 }
@@ -395,7 +394,7 @@ ul {
 }
 /* line 8, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/anouncements.css.scss */
 .anouncements h1 {
-  color: #24334c;
+  color: #25334d;
 }
 /* line 9, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/anouncements.css.scss */
 .anouncements div {
@@ -427,11 +426,29 @@ ul {
 }
 /* line 7, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
 .resources h1, .resources a {
-  color: #24334c;
+  color: #25334d;
 }
-
-/* line 12, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
-.resources-links {
+/* line 8, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources .open-btn {
+  visibility: hidden;
+  border: 2px solid #a9fa00;
+  padding: 3px 5px 3px 5px;
+  margin-bottom: 20px;
+  color: #a9fa00;
+  font-weight: 700;
+  background-color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding: 0 20px 0 20px;
+  line-height: 2.5;
+}
+/* line 16, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources .open-btn:hover {
+  color: white;
+  background-color: #a9fa00;
+}
+/* line 19, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources .resources-links {
   padding-bottom: 20px;
   max-width: 600px;
   display: -webkit-box;
@@ -447,48 +464,46 @@ ul {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-/* line 20, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
-.resources-links a {
+/* line 27, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources .resources-links a {
   width: 200px;
   padding-left: 30px;
 }
-
-/* line 26, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
-#pdf object {
+/* line 33, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources #pdf object {
   width: 600px;
   height: 500px;
   -webkit-overflow-scrolling: touch;
 }
-
-/* line 32, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
-h3 {
+/* line 39, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/resources.css.scss */
+.resources h3 {
   color: #a9fa00;
   font-weight: 700;
   visibility: hidden;
 }
 
-/* line 1, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 1, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .post {
   border-top: 1px solid lightgray;
   max-width: 800px;
 }
-/* line 5, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 5, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .post h2, .post p {
   display: inline-block;
 }
-/* line 6, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 6, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .post h2 {
   font-size: 22px;
   color: #25334d;
 }
-/* line 10, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 10, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .post .date {
   float: right;
   color: darkgrey;
   padding-left: 10px;
 }
 
-/* line 18, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 18, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view {
   display: -webkit-box;
   display: -webkit-flex;
@@ -505,12 +520,12 @@ h3 {
           flex-direction: column;
   padding-top: 200px;
 }
-/* line 22, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 22, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view h1 {
   color: #404e66;
   padding-bottom: 0px;
 }
-/* line 26, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 26, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view .create-btn {
   border: 2px solid #a9fa00;
   padding: 3px 5px 3px 5px;
@@ -519,21 +534,21 @@ h3 {
   font-weight: 700;
   background-color: white;
 }
-/* line 27, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 27, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view .create-btn:hover {
   color: white;
   background-color: #a9fa00;
 }
-/* line 28, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 28, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view a {
   color: #404e66;
 }
-/* line 29, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 29, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 #manage-view .del {
   color: red;
 }
 
-/* line 32, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 32, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .form-view {
   display: -webkit-box;
   display: -webkit-flex;
@@ -550,11 +565,11 @@ h3 {
           flex-direction: column;
   padding-top: 200px;
 }
-/* line 36, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 36, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .form-view input, .form-view textarea {
   width: 800px;
 }
-/* line 40, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 40, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .form-view .submit-btn {
   border: 2px solid #a9fa00;
   padding: 3px 5px 3px 5px;
@@ -563,13 +578,13 @@ h3 {
   font-weight: 700;
   background-color: white;
 }
-/* line 41, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 41, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .form-view .submit-btn:hover {
   color: white;
   background-color: #a9fa00;
 }
 
-/* line 44, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 44, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view {
   display: -webkit-box;
   display: -webkit-flex;
@@ -587,24 +602,24 @@ h3 {
   padding-top: 200px;
   padding-bottom: 100px;
 }
-/* line 49, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 49, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view .view-all-link {
   font-weight: 700;
 }
-/* line 50, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 50, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view h1 {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-/* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view div {
   max-width: 800px;
 }
-/* line 54, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 54, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view a {
   color: #25334d;
 }
-/* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/manage-posts.css.scss */
+/* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/posts.css.scss */
 .show-view .del {
   color: red;
 }
@@ -612,7 +627,7 @@ h3 {
 /* line 1, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/footer.css.scss */
 .footer {
   color: white;
-  background-color: #404e66;
+  background-color: #25334d;
 }
 
 /* line 6, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/footer.css.scss */
@@ -625,7 +640,7 @@ h3 {
   padding: 80px 0px;
   height: 300px;
   width: 48%;
-  background-color: rgba(37, 51, 77, 0.7);
+  background-color: rgba(63, 77, 101, 0.8);
   position: absolute;
   z-index: 7;
 }
@@ -751,27 +766,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -779,26 +799,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -806,31 +836,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- iPhone 6+ ----------- */
@@ -917,27 +965,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -945,26 +998,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -972,31 +1035,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- iPhone 5 and 5S ----------- */
@@ -1083,27 +1164,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1111,26 +1197,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1138,31 +1234,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- iPhone 4 and 4S ----------- */
@@ -1249,27 +1363,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1277,26 +1396,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1304,31 +1433,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- Galaxy S5 ----------- */
@@ -1415,27 +1562,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1443,26 +1595,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1470,31 +1632,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- Galaxy S4 ----------- */
@@ -1581,27 +1761,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1609,26 +1794,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1636,31 +1831,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- Galaxy S3 ----------- */
@@ -1747,27 +1960,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1775,26 +1993,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1802,31 +2030,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* ----------- HTC One ----------- */
@@ -1913,27 +2159,32 @@ a:hover {
   }
 
   /* line 52, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .slick-next, .slick-prev {
+    visibility: hidden;
+  }
+
+  /* line 53, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .testimonials .wrapper {
     height: 450px;
   }
 
-  /* line 55, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 56, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel {
     max-width: 900px;
   }
-  /* line 58, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 59, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .text-carousel p {
     font-size: 40px;
     text-indent: 100px;
     line-height: 1.5;
   }
 
-  /* line 64, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 65, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .big-quote {
     height: 60px;
   }
 
-  /* line 68, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 69, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .services div {
     max-width: 900px;
   }
@@ -1941,26 +2192,36 @@ a:hover {
   .services .ul li {
     line-height: 2;
     border-bottom: 1px solid #eee;
-    font-size: 30px;
+    font-size: 2em;
   }
 
-  /* line 76, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 77, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post h2, .post p, .post div {
+    font-size: 3.5em;
+    display: block;
+  }
+  /* line 81, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .post .date {
+    float: none;
+    padding-left: 0px;
+  }
+
+  /* line 87, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .anouncements {
     padding-top: 100px;
   }
 
-  /* line 79, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 99, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .resources {
     height: 1000px;
   }
-
-  /* line 82, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links {
+  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links {
     max-width: 900px;
     margin-left: 100px;
   }
-  /* line 86, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
-  .resources-links a {
+  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .resources .resources-links a {
     width: 400px;
     font-weight: 700;
     font-size: 30px;
@@ -1968,31 +2229,49 @@ a:hover {
     padding: 20px;
   }
 
-  /* line 94, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 114, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   h3 {
     visibility: inherit;
   }
 
-  /* line 97, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 124, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   #map {
     height: 600px;
   }
 
-  /*todo: fix weird 1px margin/gutter*/
-  /* line 101, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 127, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info {
-    padding-top: 100px;
-    height: 600px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: #404e66;
   }
-  /* line 105, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 133, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  .contact-info a {
+    line-height: normal;
+  }
+  /* line 134, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .contact-info li {
-    font-size: 27px;
-    line-height: 2.5;
+    font-size: 3em;
+    line-height: 1.5;
   }
 
-  /* line 110, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
+  /* line 139, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/media.css.scss */
   .copyright {
-    font-size: 40px;
+    font-size: 1em;
   }
 }
 /* line 1, /Users/Melissa/gitsnips/Vendit_v2/app/assets/stylesheets/toggle-classes.css.scss */
