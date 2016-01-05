@@ -9,7 +9,7 @@
     width: 100%;
     background-color: rgba(37,51,77,.7);
     height: 210px;
-    @include flex-box;
+    @include flex-box-column;
     }
 }
 
