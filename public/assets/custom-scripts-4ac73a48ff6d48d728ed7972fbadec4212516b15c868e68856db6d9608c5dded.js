@@ -5,6 +5,7 @@ TODO:
 */
 
 
+
 $(window).load(function() {
     // Image Carousel - plugin 
     $('.flexslider').flexslider( {
@@ -43,8 +44,8 @@ function initMap() {
 
 $(document).ready(function() {
     // Resources Links
-    $(".resources-links a").click(function() {
-             $('#pdf_content').attr("data", "assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+    $(".resources a").click(function() {
+             $('#pdf_content').attr("data", "/assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
              $('#pdf_open').attr("href", "/assets/" + $(this).attr('class') +".pdf");
              console.log('function ran... clicked: ' + $(this).attr('class'));
 
