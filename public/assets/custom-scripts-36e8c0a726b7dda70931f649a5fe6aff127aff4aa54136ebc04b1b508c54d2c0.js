@@ -11,8 +11,6 @@ $(window).load(function() {
     $('.flexslider').flexslider( {
         animation: "slide",
     });
-    
-   
 });
 
 
@@ -25,6 +23,7 @@ function initMap() {
         center: {lat: 29.613616, lng: -95.556722},
         zoom: 15,
         zoomControl: true,
+        mapTypeControl: false,
         zoomControlOptions: {
             position: google.maps.ControlPosition.TOP_CENTER
         },
@@ -45,8 +44,11 @@ function initMap() {
 
 $(document).ready(function() {
     // Resources Links
-    $(".resources a").click(function() {
-             $('#pdf_content').attr("data", "../assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+    $(".resources-links a").click(function() {
+             $('#pdf_content').attr("data", "assets/" + $(this).attr('class') + ".pdf?#zoom=50&scrollbar=0&toolbar=0&navpanes=0");
+             $('#pdf_open').attr("href", "/assets/" + $(this).attr('class') +".pdf");
+             console.log('function ran... clicked: ' + $(this).attr('class'));
+
     });
     
     
@@ -103,13 +105,12 @@ function stickyScroll(e) {
 
 
 
-
-
-
-
 window.addEventListener('scroll', stickyScroll, false);
 
-
+console.log("custom-scripts loaded.");
+function test() {
+    console.log("this function ran");
+}
     
 
 

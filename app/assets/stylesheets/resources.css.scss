@@ -1,6 +1,6 @@
 .resources {
     @include flex-box-column;
-    height: 800px;
+    height: auto;
     background-color: white;
     padding-bottom: 50px;
 
@@ -29,13 +29,22 @@
         }
     }
     #pdf object {
-        width: 600px;
-        height: 500px;
+        width: 800px;
+        height: 400px;
         -webkit-overflow-scrolling:touch;
     }
     h3 {
         color: $green1;
         font-weight: 700;
         visibility: hidden;
+    }
+
+    /*new css, need to save old css*/
+    h2, #pdf_open {display: inline-block;}
+    h2 {
+        --float: left;
+    }
+    #pdf_open {@include btn-theme;
+        font-size: 20px;
     }
 }
