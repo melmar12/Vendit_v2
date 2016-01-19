@@ -1,0 +1,35 @@
+{
+    "master_picture": "app/assets/images/master_picture.png",
+    "favicon_design": {
+        "ios": {
+            "picture_aspect": "no_change"
+        },
+        "desktop_browser": [
+
+        ],
+        "windows": {
+            "picture_aspect": "no_change",
+            "background_color": "#2b5797",
+            "on_conflict": "override"
+        },
+        "android_chrome": {
+            "picture_aspect": "no_change",
+            "theme_color": "#ffffff",
+            "manifest": {
+                "name": "PTC",
+                "display": "browser",
+                "orientation": "not_set",
+                "on_conflict": "override"
+            }
+        },
+        "safari_pinned_tab": {
+            "picture_aspect": "black_and_white",
+            "threshold": 53.125,
+            "theme_color": "#5bbad5"
+        }
+    },
+    "settings": {
+        "scaling_algorithm": "NearestNeighbor",
+        "error_on_image_too_small": false
+    }
+}
