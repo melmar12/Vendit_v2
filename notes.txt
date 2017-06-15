@@ -1,0 +1,2 @@
+personal notes
+- before pushing to heroku `rake assets:clean assets:precompile`
