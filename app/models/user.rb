@@ -1,11 +1,12 @@
 class User < ActiveRecord::Base
     has_secure_password
 
-    validates :password, presence: true,
-      length: {minimum: 3, maximum: 30}
+      def password=(password)
+        self.password_digest = BCrypt::Password.create(password)
+      end
 
-      private
-       def set_defaults
-          self.admin ||= false
-       end
+      def is_password?(password)
+        BCrypt::Password.new(self.password_digest) == password
+      end
+
 end

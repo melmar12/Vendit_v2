@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615214520) do
+ActiveRecord::Schema.define(version: 20170615231346) do
+
+  create_table "alerts", force: :cascade do |t|
+    t.text     "message"
+    t.boolean  "show"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"

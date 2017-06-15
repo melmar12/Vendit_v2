@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :alerts
   resources :users
   get 'pdf_views/cal-2015'
 
