@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  # http_basic_authenticate_with :name => "test", :password => "test"
-  # will encript later
   before_action :find_post, only:  [:show, :edit, :update, :destroy]
   def index
   	@post = Post.all.order("created_at DESC")

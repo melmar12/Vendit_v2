@@ -1,0 +1,34 @@
+<h1>Admin Dashboard</h1>
+
+  <table>
+    <tr>ANOUNCEMENTS</tr>
+    <tr>
+      <td>message</td>
+      <td>date created</td>
+    </tr>
+    <% @post.each do |post| %>
+    <tr>
+      <td><%= post.body %></td>
+      <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+      <td><%= link_to 'edit', edit_post_path(post) %> | <%= link_to 'delete', post_path(post), method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
+    </tr>
+    <% end %>
+    </table>
+
+
+  <table>
+  <tr>ALERTS</tr>
+  <tr>
+    <td>message</td>
+    <td>active</td>
+  </tr>
+  <% @alert.each do |alert| %>
+  <tr>
+    <td><%= alert.message %></td>
+    <td><%= alert.show %></td>
+    <td><%= link_to 'edit', edit_alert_path(alert) %> | <%= link_to 'delete', alert_path(alert), method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
+  </tr>
+  <% end %>
+  </table>
+
+</div>
