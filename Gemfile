@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# slick carousel 
+# slick carousel
 gem 'jquery-slick-rails'
 
 # turbolinks
@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -53,15 +53,10 @@ group :development do
   gem 'spring'
 
   gem 'rails_real_favicon'
-end
 
-group :development do
 	gem 'sqlite3'
 end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
-
-
-
