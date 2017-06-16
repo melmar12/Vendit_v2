@@ -5,7 +5,7 @@
   <%= render 'favicon' %>
 
    <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -14,10 +14,15 @@
     <meta charset="utf-8"/>
 </head>
 <body>
+  <% flash.each do |name, msg| %>
+  <ul>
+  	<li> <%= msg %> </li>
+  </ul>
+  <% end %>
 
  <div class="mobile-nav-button">
         <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-    </div>    
+    </div>
     <div class="navv">
       <div id="logo-box">
             <h2 class="text-logo">Providence</h2>
@@ -36,6 +41,8 @@
           <%= link_to 'Announcements', parent_parentpage_path + "#anounce", method: :get %>
           <%= link_to 'Resources', parent_parentpage_path + "#resource", method: :get %>
           <a class="" href="#contact">Contact Us</a>
+          <%= link_to 'Login', login_path %>
+          <%= link_to 'Logout', logout_path, method: :delete %>
         </div>
     </div>
 
@@ -53,7 +60,7 @@
         </div>
         <div id="map"></div>
          <div class="copyright randomxx">
-            <p><!-- <%= link_to 'Manage', posts_path %> - -->Website Created by <a href="http://www.melissamartinez.me">Melissa Martinez</a> - Copyright © 2016 Providence Treatment Center</p>    
+            <p><!-- <%= link_to 'Manage', posts_path %> - -->Website Created by <a href="http://www.melissamartinez.me">Melissa Martinez</a> - Copyright © 2016 Providence Treatment Center</p>
         </div>
     </div>
 
@@ -62,9 +69,9 @@
 
   <%= javascript_include_tag 'custom-scripts' %>
 
-   <!-- google maps --> 
+   <!-- google maps -->
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6J6WFaD2V_bYZNIN6499yEtedZA5qW50&callback=initMap">
-    </script> 
+    </script>
 </body>
 </html>
