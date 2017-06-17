@@ -4,6 +4,10 @@
   <strong>Name:</strong>
   <%= @document.name %>
 </p>
+<p>
+  <strong>Url:</strong>
+  <%= @document.doc.url %>
+</p>
 
 <%= link_to 'Edit', edit_document_path(@document) %> |
 <%= link_to 'Back', documents_path %>
