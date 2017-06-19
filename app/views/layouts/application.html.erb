@@ -38,8 +38,8 @@
           <%= link_to 'Home', root_path, method: :get %>
           <%= link_to 'About Us', root_path + "#about", method: :get %>
           <%= link_to 'Services', root_path + "#service", method: :get %>
-          <%= link_to 'Announcements', parent_parentpage_path + "#anounce", method: :get %>
-          <%= link_to 'Resources', parent_parentpage_path + "#resource", method: :get %>
+          <%= link_to 'Announcements', parent_index_path, method: :get %>
+          <%= link_to 'Documents', parent_index_path, method: :get %>
           <a class="" href="#contact">Contact Us</a>
           <%= link_to 'dashboard', dashboard_index_path %>
           <%= link_to 'Login', login_path %>

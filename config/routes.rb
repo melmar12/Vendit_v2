@@ -6,13 +6,12 @@ Rails.application.routes.draw do
 
   resources :alerts
   resources :users
-  get 'pdf_views/cal-2015'
 
   #get 'posts/index'
 
   resources :posts
 
-  get 'parent/parentpage'
+  get 'parent/index'
 
   get 'home/homepage'
 
