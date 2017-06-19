@@ -1,0 +1,18 @@
+<h2>Anouncements <span class="glyphicon glyphicon-bullhorn"></span></h2>
+<table class="table-style1 anouncements-table">
+  <tbody>
+    <% if @post.present? %>
+      <% @post.each do |post| %>
+      <tr>
+        <td><%= post.body %></td>
+        <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+      </tr>
+      <% end %>
+    <% else %>
+      <tr>
+        <td>new anouncements will appear here</td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

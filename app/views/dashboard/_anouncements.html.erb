@@ -1,0 +1,29 @@
+<h2>Anouncements <span class="glyphicon glyphicon-bullhorn"></span></h2>
+<p class="description">anouncements will aprear publicly in the announcements section</p>
+<table class="table-style1">
+  <thead>
+    <tr>
+      <td>message</td>
+      <td>date created</td>
+      <td colspan="1"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% if @post.present? %>
+      <% @post.each do |post| %>
+      <tr>
+        <td><%= post.body %></td>
+        <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+        <td><%= link_to 'edit', edit_post_path(post) %></td>
+        <td><%= link_to 'delete', post_path(post), class: 'del', method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
+      </tr>
+      <% end %>
+    <% else %>
+      <tr>
+        <td>no anouncements</td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to '+ new anouncement', new_post_path %>

@@ -3,96 +3,10 @@
     <div>
       <h1>Admin Dashboard</h1>
 
-      <h2>Anouncements <span class="glyphicon glyphicon-bullhorn"></span></h2>
-      <p class="description">anouncements will aprear publicly in the announcements section</p>
-      <table class="table-style1">
-        <thead>
-          <tr>
-            <td>message</td>
-            <td>date created</td>
-            <td colspan="1"></td>
-          </tr>
-        </thead>
-        <tbody>
-          <% if @post.present? %>
-            <% @post.each do |post| %>
-            <tr>
-              <td><%= post.body %></td>
-              <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
-              <td><%= link_to 'edit', edit_post_path(post) %></td>
-              <td><%= link_to 'delete', post_path(post), class: 'del', method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
-            </tr>
-            <% end %>
-          <% else %>
-            <tr>
-              <td>no anouncements</td>
-              <td></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <%= link_to '+ new announcement', new_post_path %>
+      <%= render 'anouncements' %>
+      <%= render 'alerts' %>
+      <%= render 'documents' %>
 
-      <h2>Alerts <span class="glyphicon glyphicon-warning-sign"></span></h2>
-      <p class="description">alerts appear on top of the page on all pages when active is set to "true"</p>
-      <table class="table-style1">
-        <thead>
-          <tr>
-            <td>message</td>
-            <td>active</td>
-            <td colspan="1"></td>
-          </tr>
-        </thead>
-        <tbody>
-          <% if @alert.present? %>
-            <% @alert.each do |alert| %>
-            <tr>
-              <td><%= alert.message %></td>
-              <td><%= alert.show %></td>
-              <td><%= link_to 'edit', edit_alert_path(alert) %></td>
-              <td><%= link_to 'delete', alert_path(alert), class: 'del', method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
-            </tr>
-            <% end %>
-          <% else %>
-            <tr>
-              <td>no alerts</td>
-              <td></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <%= link_to '+ new alert', new_alert_path %>
-
-
-      <h2>Documents <span class="glyphicon glyphicon-folder-open"></span></h2>
-      <table class="table-style1">
-        <thead>
-          <tr>
-            <td>name</td>
-            <td>filename</td>
-            <td colspan="1"></td>
-          </tr>
-        </thead>
-        <tbody>
-          <% if @documents.present? %>
-            <% @documents.each do |document| %>
-              <tr>
-                <td><%= document.name %></td>
-                <td><%= document.doc_file_name %></td>
-                <td><%= link_to 'view/download', document.doc.url %></td>
-                <td><%= link_to 'edit', edit_document_path(document) %></td>
-                <td><%= link_to 'delete', document, class: 'del', method: :delete, data: { confirm: 'Are you sure you want to delete?' } %></td>
-              </tr>
-            <% end %>
-          <% else %>
-            <tr>
-              <td>no documents</td>
-              <td></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <%= link_to '+ new document', new_document_path %>
     </div>
   </div>
 </div>
