@@ -20,6 +20,14 @@
   </ul>
   <% end %>
 
+  <% if @alerts %>
+    <% @alerts.each do |alert| %>
+      <% if alert.show == true %>
+        <div class="alerts"><%= alert.message %></div>
+      <% end %>
+    <% end %>
+  <% end %>
+
  <div class="mobile-nav-button">
         <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
     </div>
