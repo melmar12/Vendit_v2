@@ -9,7 +9,7 @@
           <tr>
             <td>message</td>
             <td>date created</td>
-            <td colspan="2"></td>
+            <td colspan="1"></td>
           </tr>
         </thead>
         <tbody>
@@ -23,6 +23,7 @@
           <% end %>
         </tbody>
       </table>
+      <%= link_to '+ new announcement', new_post_path %>
 
       <h2>Alerts <span class="glyphicon glyphicon-warning-sign"></span></h2>
       <table class="table-style1">
@@ -30,6 +31,7 @@
           <tr>
             <td>message</td>
             <td>active</td>
+            <td colspan="1"></td>
           </tr>
         </thead>
         <tbody>
@@ -43,6 +45,8 @@
           <% end %>
         </tbody>
       </table>
+      <%= link_to '+ new alert', new_alert_path %>
+
 
       <h2>Documents <span class="glyphicon glyphicon-folder-open"></span></h2>
       <table class="table-style1">
@@ -50,6 +54,7 @@
           <tr>
             <td>name</td>
             <td>filename</td>
+            <td colspan="1"></td>
           </tr>
         </thead>
         <tbody>
@@ -64,6 +69,7 @@
           <% end %>
         </tbody>
       </table>
+      <%= link_to '+ new document', new_document_path %>
     </div>
   </div>
 </div>
