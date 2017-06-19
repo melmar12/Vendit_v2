@@ -15,7 +15,7 @@
  *= require slick-theme
  */
 
- @import "presets.css.scss";
+ @import "theme.css.scss";
  @import "navigation.css.scss";
  @import "image-carousel.css.scss";
 
@@ -26,9 +26,13 @@
  @import "anouncements.css.scss";
  @import "resources.css.scss";
 
+ @import "custom/tables.css.scss";
+ @import "custom/admin-dashboard.css.scss";
+
  @import "posts.css.scss";
 
  @import "footer.css.scss";
- @import "media.css.scss";
- @import "toggle-classes.css.scss";
 
+ @import "media.css.scss";
+
+ @import "toggle-classes.css.scss";

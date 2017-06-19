@@ -1,5 +1,5 @@
 body {
-    margin: 0; 
+    margin: 0;
 }
 
 /* mixins */
@@ -11,10 +11,10 @@ body {
 @mixin btn-theme {
     border: 2px solid $green1;
     padding: 3px 5px 3px 5px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     color: $green1;
     font-weight: 700;
-    background-color: white;    
+    background-color: white;
 }
 @mixin btn-hover {
         color: white;
@@ -26,6 +26,10 @@ body {
 
 /* variables */
 /*next time name them "accent, color1, color2 etc.. */
+$color1: #404e66; // light
+$color2: #25334d; //
+$color3: #a9fa00; // accent
+
 $green1: #a9fa00;
 $blue1: #404e66;
 @mixin rgbaBlue1($a) {background-color: rgba(63,77,101,$a);}
@@ -39,14 +43,14 @@ $blue2: #25334d;
     font-family: Roboto, sans-serif;
 }
 h1 {
-    font-weight: 700; 
-    font-size: 30px; 
-    text-align: center; 
-    padding-bottom: 15px; 
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
     padding-top: 20px;
 }
 p, a, li {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 30px;
     text-decoration: none;
     /* a:hover{} at bottom */
@@ -55,6 +59,6 @@ ul{
     list-style-type: none;
 }
 .glyphicon {
-    color: $green1; 
+    color: $green1;
     padding-right: 13px;
 }

@@ -1,0 +1,20 @@
+.table-style1 {
+  width: 100%;
+  td {
+    padding-right: 15px;
+  }
+  tr {
+    border-bottom: 1px solid rgba(black, 0.05);
+  }
+  thead tr {
+    border: none;
+    color: $color1;
+    font-weight: 700;
+    td {
+    }
+  }
+
+  .del {
+    color: rgba(red, 0.5);
+  }
+}
