@@ -4,11 +4,18 @@
       <h2>Anouncements <span class="glyphicon glyphicon-bullhorn"></span></h2>
       <table class="table-style1 anouncements-table">
         <tbody>
-          <% @post.each do |post| %>
-          <tr>
-            <td><%= post.body %></td>
-            <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
-          </tr>
+          <% if @post.present? %>
+            <% @post.each do |post| %>
+            <tr>
+              <td><%= post.body %></td>
+              <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+            </tr>
+            <% end %>
+          <% else %>
+            <tr>
+              <td>new anouncements will appear here</td>
+              <td></td>
+            </tr>
           <% end %>
         </tbody>
       </table>
@@ -16,11 +23,18 @@
       <h2>Documents <span class="glyphicon glyphicon-folder-open"></span></h2>
       <table class="table-style1">
         <tbody>
-          <% @documents.each do |document| %>
+          <% if @documents.present? %>
+            <% @documents.each do |document| %>
             <tr>
               <td class="doc-name"><%= document.name %></td>
               <td><%= document.doc_file_name %></td>
               <td><%= link_to 'view/download', document.doc.url %></td>
+            </tr>
+            <% end %>
+          <% else %>
+            <tr>
+              <td>no documents</td>
+              <td></td>
             </tr>
           <% end %>
         </tbody>
