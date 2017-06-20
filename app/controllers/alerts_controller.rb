@@ -28,7 +28,8 @@ class AlertsController < ApplicationController
 
     respond_to do |format|
       if @alert.save
-        format.html { redirect_to @alert, notice: 'Alert was successfully created.' }
+        flash[:success] = 'Alert was successfully created'
+        format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully created.' }
         format.json { render :show, status: :created, location: @alert }
       else
         format.html { render :new }
@@ -42,7 +43,8 @@ class AlertsController < ApplicationController
   def update
     respond_to do |format|
       if @alert.update(alert_params)
-        format.html { redirect_to @alert, notice: 'Alert was successfully updated.' }
+        flash[:success] = 'Alert was successfully updated'
+        format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully updated.' }
         format.json { render :show, status: :ok, location: @alert }
       else
         format.html { render :edit }
@@ -56,7 +58,8 @@ class AlertsController < ApplicationController
   def destroy
     @alert.destroy
     respond_to do |format|
-      format.html { redirect_to alerts_url, notice: 'Alert was successfully destroyed.' }
+      flash[:success] = 'Alert was successfully deleted'
+      format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

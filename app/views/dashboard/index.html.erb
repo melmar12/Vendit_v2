@@ -1,6 +1,11 @@
 <div class="page-module admin-dashboard">
   <div class="wraper">
     <div class="container">
+      
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "flash #{key}" %>
+      <% end %>
+
       <h1>Admin Dashboard</h1>
 
       <%= render 'anouncements' %>

@@ -12,9 +12,11 @@ class PostsController < ApplicationController
   	@post = Post.new(post_params)
 
   	if @post.save
-  		redirect_to @post
+  		redirect_to dashboard_index_path
+      flash[:success] = 'new anouncement created'
   	else
   		render 'new'
+      flash[:danger] = 'something went wrong, try again'
   	end
   end
 
@@ -26,7 +28,8 @@ class PostsController < ApplicationController
 
   def update
   	if @post.update(post_params)
-  		redirect_to posts_path
+  		redirect_to dashboard_index_path
+      flash[:success] = 'anouncement updated'
   	else
   		render 'edit'
   	end
@@ -34,7 +37,8 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to dashboard_index_path
+    flash[:success] = 'anouncement deleted'
   end
 
 

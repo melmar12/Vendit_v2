@@ -19,7 +19,11 @@
 			<div class="form-group">
 				<%= f.submit 'Login', :class => 'btn btn-primary' %>
 			</div>
+				<% flash.each do |key, value| %>
+				  <%= content_tag :div, value, class: "flash #{key}" %>
+				<% end %>
 			<% end %>
+
 		</div>
 	</div>
 </div>
