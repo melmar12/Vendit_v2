@@ -44,7 +44,7 @@ class AlertsController < ApplicationController
     respond_to do |format|
       if @alert.update(alert_params)
         flash[:success] = 'Alert was successfully updated'
-        format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully updated.' }
+        format.html { redirect_to dashboard_index_path}
         format.json { render :show, status: :ok, location: @alert }
       else
         format.html { render :edit }

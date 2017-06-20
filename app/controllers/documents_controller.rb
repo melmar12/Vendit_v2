@@ -29,7 +29,7 @@ class DocumentsController < ApplicationController
     respond_to do |format|
       if @document.save
         flash[:success] = 'document was successfully created'
-        format.html { redirect_to dashboard_index_path, notice: 'Document was successfully created.' }
+        format.html { redirect_to dashboard_index_path}
         format.json { render :show, status: :created, location: @document }
       else
         format.html { render :new }
@@ -44,7 +44,7 @@ class DocumentsController < ApplicationController
     respond_to do |format|
       if @document.update(document_params)
         flash[:success] = 'Document was successfully updated'
-        format.html { redirect_to dashboard_index_path, notice: 'Document was successfully updated.' }
+        format.html { redirect_to dashboard_index_path}
         format.json { render :show, status: :ok, location: @document }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class DocumentsController < ApplicationController
     @document.destroy
     respond_to do |format|
       flash[:success] = 'Document was successfully deleted'
-      format.html { redirect_to dashboard_index_path, notice: 'Document was successfully destroyed.' }
+      format.html { redirect_to dashboard_index_path}
       format.json { head :no_content }
     end
   end
