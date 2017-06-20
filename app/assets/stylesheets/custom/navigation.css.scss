@@ -6,6 +6,7 @@
     /*comented out bc its producing weird margin glitch :/ */
     z-index: 100;
     position: relative;
+    display: block;
 }
 
 #logo-box {
@@ -15,7 +16,7 @@
     margin-bottom: -25px;
 }
 
-.text-logo { 
+.text-logo {
     margin-top: 20px;
     font-size: 55px;
     font-weight: 700;
@@ -24,7 +25,7 @@
 #sub-text-logo {
     font-size: 34px;
     margin-top: -20px;
-    margin-left: 3px;   
+    margin-left: 3px;
 }
 
 #left-nav {
@@ -44,7 +45,7 @@
     a {
       text-decoration: none;
       color: white;
-      margin-left: 15px; 
+      margin-left: 15px;
     }
 }
 

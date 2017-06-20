@@ -40,21 +40,15 @@ function initMap() {
 };
 
 
-
-$(document).ready(function() {
-});
-
-console.log('halp');
-
-$('.flash-msg').click(function () {
-  this.remove();
-});
+  $('.flash-msg').click(function () {
+    this.remove();
+  });
 
 
-    // mobile Navigation
-    $(".mobile-nav-button").click(function() {
-        $(".navv").toggleClass("is-visible");
-    });
+  // mobile Navigation
+  $(".mobile-nav-button").click(function() {
+      $(".navv").toggleClass("is-visible");
+  });
 
 
   // Image Carousel - plugin
@@ -91,14 +85,21 @@ var nav                 = document.querySelector('.navv'),
 
 
 function stickyScroll(e) {
+  var active = false;
 
-  if( window.pageYOffset > (nav_height) ) {
-    nav_links.classList.add(sticky_class);
+  if( window.pageYOffset > (nav_height)) {
+    active = true;
+  } else {
+    active = false;
   }
 
-  if( window.pageYOffset < (nav_height) ) {
+  if (active == true) {
+    nav_links.classList.add(sticky_class);
+    //document.getElementById('navv').style.marginTop = '-' + pageYOffset + 'px';
+  }
+  if (active == false) {
     nav_links.classList.remove(sticky_class);
-
+    //document.getElementById('navv').style.marginTop = '0px';
   }
 }
 
