@@ -5,6 +5,7 @@ TODO:
 */
 
 
+
 $(window).load(function() {
     // Image Carousel - plugin
     $('.flexslider').flexslider( {
@@ -47,7 +48,8 @@ $(document).ready(function() {
 console.log('halp');
 
 $('.flash-msg').click(function () {
-  this.remove();
+  //this.style.visibility = 'hidden';
+  console.log('yo' + this);
 });
 
 
@@ -78,7 +80,7 @@ $('.flash-msg').click(function () {
     });
 
 
-
+});
 
 
 // Sticky Navigation
@@ -105,3 +107,8 @@ function stickyScroll(e) {
 
 
 window.addEventListener('scroll', stickyScroll, false);
+
+console.log("custom-scripts loaded.");
+function test() {
+    console.log("this function ran");
+}

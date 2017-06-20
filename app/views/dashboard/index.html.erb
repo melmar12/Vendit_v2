@@ -1,9 +1,12 @@
 <div class="page-module admin-dashboard">
   <div class="wraper">
     <div class="container">
-      
+
       <% flash.each do |key, value| %>
-        <%= content_tag :div, value, class: "flash #{key}" %>
+        <div class="flash-msg">
+          <%= value %>
+          <span class="glyphicon glyphicon-remove"></span>
+        </div>
       <% end %>
 
       <h1>Admin Dashboard</h1>
