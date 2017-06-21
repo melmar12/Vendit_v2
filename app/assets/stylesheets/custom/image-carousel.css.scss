@@ -2,14 +2,15 @@
     /*put background image bc of weird flashing :(*/
     background-image: image-url("Vphoto-1");
     background-size: cover;
-    
+    width: 80%;
+    display: block;
     div {
         background-size: cover;
         height: 600px;
         width: 100%;
     }
     .slick-next {
-        margin-right: 50px;    
+        margin-right: 50px;
     }
     .slick-prev {
         margin-left: 50px;
@@ -32,7 +33,7 @@
     color: white;
 
     span {
-    background-color: rgba(169,250,0,.7); 
-    padding: 10px;  
+    background-color: rgba(169,250,0,.7);
+    padding: 10px;
     }
 }
