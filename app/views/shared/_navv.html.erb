@@ -20,10 +20,8 @@
          <%= link_to 'Documents', parent_index_path, method: :get %>
          <a class="" href="#contact">Contact Us</a>
          <% if logged_in? %>
-         <%= link_to '(Admin)Dashboard', dashboard_index_path %>
-         <%= link_to 'Logout', logout_path, method: :delete %>
-         <% else %>
-         <%= link_to 'Login', login_path %>
+         <%= link_to 'Logout', logout_path, method: :delete, class: 'admin-link' %>         
+         <%= link_to '(Admin)Dashboard', dashboard_index_path, class: 'admin-link' %>
          <% end %>
        </div>
    </div>

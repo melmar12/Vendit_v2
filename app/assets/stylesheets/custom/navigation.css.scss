@@ -49,6 +49,14 @@
       margin-left: 15px;
     }
 }
+.admin-link {
+  float: right;color:
+  $color3 !important;
+  font-weight: bold;
+}
+.admin-link:hover {color: white !important}
+.login-link {text-decoration: underline;}
+.login-link:hover{color: $color3}
 
 .mobile-nav-button {
     visibility: hidden;
