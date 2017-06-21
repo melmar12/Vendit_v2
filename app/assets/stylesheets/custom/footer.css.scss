@@ -1,7 +1,8 @@
-.footer {
+ .footer {
     color: white;
     background-color: $blue2;
-
+    display: block;
+    margin: 0px;
 
     #map {height: 300px;}
     .contact-info {
