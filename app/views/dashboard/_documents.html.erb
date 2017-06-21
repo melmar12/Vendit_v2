@@ -6,6 +6,7 @@
           <tr>
             <td>name</td>
             <td>filename</td>
+            <td>last edited</td>
             <td colspan="1"></td>
           </tr>
         </thead>
@@ -15,6 +16,7 @@
               <tr>
                 <td><%= document.name %></td>
                 <td><%= document.doc_file_name %></td>
+                <td width='200px'><%= document.updated_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
                 <td><%= link_to 'view/download', document.doc.url %></td>
                 <td><%= link_to 'edit', edit_document_path(document) %></td>
                 <td><%= link_to 'delete', document, class: 'del', method: :delete, data: { confirm: 'Are you sure you want to delete?' } %></td>

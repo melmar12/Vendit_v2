@@ -29,7 +29,7 @@ class AlertsController < ApplicationController
     respond_to do |format|
       if @alert.save
         flash[:success] = 'Alert was successfully created'
-        format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully created.' }
+        format.html { redirect_to dashboard_index_path}
         format.json { render :show, status: :created, location: @alert }
       else
         format.html { render :new }

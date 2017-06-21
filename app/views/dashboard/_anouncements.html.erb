@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <td>message</td>
-      <td>date created</td>
+      <td>last edited</td>
       <td colspan="1"></td>
     </tr>
   </thead>
@@ -13,7 +13,7 @@
       <% @post.each do |post| %>
       <tr>
         <td><%= post.body %></td>
-        <td><%= post.created_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+        <td width='200px'><%= post.updated_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
         <td><%= link_to 'edit', edit_post_path(post) %></td>
         <td><%= link_to 'delete', post_path(post), class: 'del', method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
       </tr>

@@ -20,7 +20,10 @@
   <% if @alerts %>
     <% @alerts.each do |alert| %>
       <% if alert.show == true %>
-        <div class="alerts"><%= alert.message %></div>
+        <div class="alerts">
+          <p><%= alert.message %></p>
+          <p id="date"><%= alert.updated_at.strftime("%a %l:%M%P %b %d, %Y") %></p>
+        </div>
       <% end %>
     <% end %>
   <% end %>

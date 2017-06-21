@@ -5,6 +5,7 @@
     <tr>
       <td>message</td>
       <td>active</td>
+      <td>last edited</td>
       <td colspan="1"></td>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
       <tr>
         <td><%= alert.message %></td>
         <td><%= alert.show %></td>
+        <td width='200px'><%= alert.updated_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
         <td><%= link_to 'edit', edit_alert_path(alert) %></td>
         <td><%= link_to 'delete', alert_path(alert), class: 'del', method: :delete, data: { confirm: 'are you sure you want to delete?'}, class: 'del' %></td>
       </tr>

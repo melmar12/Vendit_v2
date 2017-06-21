@@ -75,33 +75,33 @@ function initMap() {
 
 
 
-// Sticky Navigation
-var nav                 = document.querySelector('.navv'),
-    nav_height          = getComputedStyle(nav).height.split('px')[0],
-    nav_links           = document.querySelector('.nav-links'),
-    //nav_links_height    = getComputedStyle(nav_links).height.split('px')[0],
-    sticky_class        = 'is-fixed';
-    //unfixed             = 'unfixed'
-
-
-function stickyScroll(e) {
-  var active = false;
-
-  if( window.pageYOffset > (nav_height)) {
-    active = true;
-  } else {
-    active = false;
-  }
-
-  if (active == true) {
-    nav_links.classList.add(sticky_class);
-    //document.getElementById('navv').style.marginTop = '-' + pageYOffset + 'px';
-  }
-  if (active == false) {
-    nav_links.classList.remove(sticky_class);
-    //document.getElementById('navv').style.marginTop = '0px';
-  }
-}
+// // Sticky Navigation
+// var nav                 = document.querySelector('.navv'),
+//     nav_height          = getComputedStyle(nav).height.split('px')[0],
+//     nav_links           = document.querySelector('.nav-links'),
+//     //nav_links_height    = getComputedStyle(nav_links).height.split('px')[0],
+//     sticky_class        = 'is-fixed';
+//     //unfixed             = 'unfixed'
+//
+//
+// function stickyScroll(e) {
+//   var active = false;
+//
+//   if( window.pageYOffset > (nav_height)) {
+//     active = true;
+//   } else {
+//     active = false;
+//   }
+//
+//   if (active == true) {
+//     nav_links.classList.add(sticky_class);
+//     //document.getElementById('navv').style.marginTop = '-' + pageYOffset + 'px';
+//   }
+//   if (active == false) {
+//     nav_links.classList.remove(sticky_class);
+//     //document.getElementById('navv').style.marginTop = '0px';
+//   }
+// }
 
 
 

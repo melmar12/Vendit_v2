@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
   		flash[:success] = "you have successfully logged in!"
   		redirect_to dashboard_index_path
   	else
-  		flash.now[:danger] = "there was something wrong with your login information"
+  		flash.now[:danger] = "incorrect username or password"
   		render 'new'
   	end
   end
