@@ -1,22 +1,29 @@
  .footer {
-    color: white;
+    color: rgba(white, 0.5);
     background-color: $blue2;
     display: block;
     margin: 0px;
-
+    ul {
+      display: inline-block;
+    }
     #map {height: 300px;}
     .contact-info {
-        padding: 80px 0px;
-        height: 300px;
-        width: 48%;
-        @include rgbaBlue1(.8);
-        position: absolute;
-        z-index: 7;
-
-        a {
-            color: white;
-            @include flex-box-column;
-        }
+      width: 100%;
+      border-top: 1px solid rgba(black, 0.1);
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+        // padding: 80px 0px;
+        // height: 300px;
+        // width: 48%;
+        // @include rgbaBlue1(.8);
+        // position: absolute;
+        // z-index: 7;
+        //
+        // a {
+        //     color: white;
+        //     @include flex-box-column;
+        // }
     }
     .copyright {
         padding: 10px 10px 1px 0px;
@@ -24,7 +31,7 @@
         background-color: $blue2;
         text-align: right;
         a {
-            color: white;
+            color: rgba(white, 0.5);
             font-weight: 700;
         }
     }

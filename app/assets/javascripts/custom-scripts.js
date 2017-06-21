@@ -24,11 +24,11 @@ function initMap() {
         zoomControl: true,
         mapTypeControl: false,
         zoomControlOptions: {
-            position: google.maps.ControlPosition.TOP_CENTER
+            position: google.maps.ControlPosition.TOP_RIGHT
         },
         streetViewControl: true,
         streetViewControlOptions: {
-            position: google.maps.ControlPosition.TOP_CENTER
+            position: google.maps.ControlPosition.TOP_RIGHT
         }
     });
 
