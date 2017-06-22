@@ -34,3 +34,24 @@
 }
 
 .name {font-style: italic;}
+
+@mixin testimonials-responsive {
+  .testimonials {
+    width: 100%;
+  }
+  .testimonials .wrapper2 {
+      height: 450px;
+  }
+  .text-carousel {
+      max-width: 900px;
+
+      p {
+          font-size: 40px;
+          text-indent: 100px;
+          line-height: 1.5;
+      }
+  }
+  .big-quote {
+      height: 60px;
+  }
+}

@@ -64,3 +64,17 @@ ul{
     color: $green1;
     padding-right: 13px;
 }
+
+@mixin theme-responsive {
+  h1 {
+      font-size: 60px;
+  }
+  .glyphicon-ok {
+      font-size: 40px;
+      padding-right: 30px;
+  }
+  p, a {
+      font-size: 35px;
+      line-height: 1.8;
+  }
+}

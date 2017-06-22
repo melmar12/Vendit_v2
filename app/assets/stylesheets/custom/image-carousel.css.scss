@@ -42,3 +42,14 @@
     padding: 10px;
     }
 }
+
+@mixin image-carousel-responsive {
+  .caption {
+      font-size: 50px;
+      margin-top: -350px;
+  }
+  .image-carousel {
+    width: 100%;
+  }
+  .slick-next, .slick-prev {visibility:hidden}
+}

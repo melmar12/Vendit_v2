@@ -21,3 +21,17 @@
     }
   }
 }
+
+@mixin page-module-responsive {
+  .page-module {
+    width: 100%;
+    .wraper {
+      width: 100% !important;
+      padding-top: 40px;
+    }
+    .container2 {
+      position: relative;
+      width: 80%;
+    }
+  }
+}

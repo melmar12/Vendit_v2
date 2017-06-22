@@ -13,3 +13,18 @@
   }
   .del {color: rgba(red, 0.5);}
 }
+
+@mixin table-responsive {
+  .table-style1 {
+    border-left:  1px solid rgba(black, 0.05);
+    border-top:  1px solid rgba(black, 0.05);
+    tr {
+      font-size: 30px;
+      border-top: 1px solid rgba(black, 0.05);
+    }
+    td {
+      border-right: 1px solid rgba(black, 0.05);
+      padding: 6px;
+    }
+  }
+}

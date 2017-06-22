@@ -26,3 +26,26 @@
     }
 }
 a:hover {color: $green1; text-decoration: none;}
+
+@mixin footer-responsive {
+  h3 {
+      visibility: inherit;;
+  }
+  #map {
+      height: 600px !important;
+  }
+  .footer {padding-top: 40px}
+  .contact-info {
+      position: relative;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      li {
+          font-size: 3em;
+          line-height: 1.5;
+      }
+  }
+  .copyright {
+      font-size: 0.5em;
+  }
+}

@@ -137,3 +137,38 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@mixin navv-responsive {
+  .mobile-nav-button {
+      visibility: inherit;
+  }
+  #left-nav, .text-logo { visibility: hidden}
+  .navv {
+      visibility: hidden;
+      position: fixed;
+      margin-bottom: 0px;
+      height: 100%;
+      width: 500px;
+
+      display: flex;
+      flex-direction: column;
+  }
+  .nav-links {
+      margin-top: -20px;
+      padding-left: 20px;
+      background-color: transparent;
+
+      display: flex;
+      flex-direction: column;
+
+      a {
+          width: 400px;
+          font-size: 50px;
+          line-height: 3;
+          border-bottom: 1px solid grey;
+      }
+  }
+  .is-fixed {
+      animation: none;
+  }
+}
