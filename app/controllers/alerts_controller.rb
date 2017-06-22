@@ -1,28 +1,13 @@
 class AlertsController < ApplicationController
   before_action :set_alert, only: [:show, :edit, :update, :destroy]
 
-  # GET /alerts
-  # GET /alerts.json
-  def index
-    @alerts = Alert.all
-  end
-
-  # GET /alerts/1
-  # GET /alerts/1.json
-  def show
-  end
-
-  # GET /alerts/new
   def new
     @alert = Alert.new
   end
 
-  # GET /alerts/1/edit
   def edit
   end
 
-  # POST /alerts
-  # POST /alerts.json
   def create
     @alert = Alert.new(alert_params)
 
@@ -38,8 +23,6 @@ class AlertsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /alerts/1
-  # PATCH/PUT /alerts/1.json
   def update
     respond_to do |format|
       if @alert.update(alert_params)
@@ -53,8 +36,6 @@ class AlertsController < ApplicationController
     end
   end
 
-  # DELETE /alerts/1
-  # DELETE /alerts/1.json
   def destroy
     @alert.destroy
     respond_to do |format|
