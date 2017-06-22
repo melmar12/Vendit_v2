@@ -9,9 +9,9 @@
   .glyphicon {
     color: $color2;
   }
-  .description {
-    color: rgba(black, 0.5);
-  }
+}
+.description {
+  color: rgba(black, 0.5);
 }
 
 @mixin admin-dash-responsive {

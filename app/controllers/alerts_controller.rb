@@ -1,5 +1,7 @@
 class AlertsController < ApplicationController
   before_action :set_alert, only: [:show, :edit, :update, :destroy]
+  before_action :require_user, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:edit, :update, :destroy]
 
   def new
     @alert = Alert.new

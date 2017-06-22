@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
-
+  before_action :require_user, only: [:index]
 
   def index
     @post = Post.all.order("created_at DESC")

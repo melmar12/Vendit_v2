@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  before_action :require_admin, only: [:index]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
+  before_action :require_user, only: [:index, :show]
 
   def index
   end
@@ -48,5 +50,12 @@ class UsersController < ApplicationController
 
     def user_params_without_password
       params.require(:user).permit(:email, :username, :first_name, :last_name, :admin, :locked)
+    end
+
+    def require_same_user
+      if current_user != @user 
+        flash[:danger] = "You can only edit your own account"
+        redirect_to root_path
+      end
     end
 end

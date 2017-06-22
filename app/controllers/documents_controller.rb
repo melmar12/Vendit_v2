@@ -1,6 +1,7 @@
 class DocumentsController < ApplicationController
   before_action :set_document, only: [:show, :edit, :update, :destroy]
-
+  before_action :require_user, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:edit, :update, :destroy]
   def new
     @document = Document.new
   end

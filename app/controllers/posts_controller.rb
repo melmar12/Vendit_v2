@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_post, only:  [:show, :edit, :update, :destroy]
+  before_action :require_user, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:edit, :update, :destroy]
 
   def new
   	@post = Post.new

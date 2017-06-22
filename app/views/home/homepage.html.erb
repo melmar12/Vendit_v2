@@ -1,4 +1,10 @@
-
+  <% flash.each do |key, value| %>
+    <div class="flash-msg">
+      <%= value %>
+      <span class="glyphicon glyphicon-remove"></span>
+    </div>
+  <% end %>
+  
   <%= render 'image_carousel' %>
 
   <%= render 'about' %>
