@@ -19,8 +19,14 @@ class UsersController < ApplicationController
   end
 
   def update
+    if user_params[:password].blank?
+      params = user_params_without_password
+    else
+      params = user_params
+    end
+
     respond_to do |format|
-      if @user.update(user_params)
+      if @user.update(params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
       else
         format.html { render :edit }
@@ -38,5 +44,9 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:username, :password, :admin)
+    end
+
+    def user_params_without_password
+      params.require(:user).permit(:email, :username, :first_name, :last_name, :admin, :locked)
     end
 end

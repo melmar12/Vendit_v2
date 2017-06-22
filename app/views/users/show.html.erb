@@ -1,19 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="page-module">
+  <div class="wraper">
+    <div class="container3">
+      <p id="notice"><%= notice %></p>
+      <h1>User Settings</h1>
+      <p>
+        <strong>username:</strong>
+        <%= @user.username %>
+      </p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
 
-<p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p>
+      <p>
+        <strong>admin rights:</strong>
+        <%= @user.admin %>
+      </p>
 
-<p>
-  <strong>Admin:</strong>
-  <%= @user.admin %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+      <%= link_to 'edit username and password', edit_user_path(@user) %>
+    </div>
+  </div>
+</div>
