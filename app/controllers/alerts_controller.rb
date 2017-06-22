@@ -40,7 +40,7 @@ class AlertsController < ApplicationController
     @alert.destroy
     respond_to do |format|
       flash[:success] = 'Alert was successfully deleted'
-      format.html { redirect_to dashboard_index_path, notice: 'Alert was successfully destroyed.' }
+      format.html { redirect_to dashboard_index_path}
       format.json { head :no_content }
     end
   end

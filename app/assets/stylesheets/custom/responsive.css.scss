@@ -5,6 +5,7 @@
     @include theme-responsive;
     @include page-module-responsive;
     @include table-responsive;
+    @include flash-msg-responsive;
 
     @include navv-responsive;
 
@@ -17,6 +18,7 @@
     @include parent-dashboard;
 
     @include footer-responsive;
+
 
 }
 
