@@ -15,20 +15,26 @@
  *= require slick-theme
  */
 
- @import "presets.css.scss";
- @import "navigation.css.scss";
- @import "image-carousel.css.scss";
+ @import "theme.css.scss";
 
- @import "about-us.css.scss";
- @import "testimonials.css.scss";
- @import "our-services.css.scss";
+ // reusable components
+ @import "components/alerts.css.scss";
+ @import "components/page-module";
+ @import "components/flash-msg.css.scss";
+ @import "components/tables.css.scss";
 
- @import "anouncements.css.scss";
- @import "resources.css.scss";
+ @import "custom/navigation.css.scss";
+ @import "custom/image-carousel.css.scss";
 
- @import "posts.css.scss";
+ @import "custom/about-us.css.scss";
+ @import "custom/testimonials.css.scss";
+ @import "custom/our-services.css.scss";
 
- @import "footer.css.scss";
- @import "media.css.scss";
- @import "toggle-classes.css.scss";
+ @import "custom/admin-dashboard.css.scss";
+ @import "custom/parent-dashboard.css.scss";
 
+ @import "custom/footer.css.scss";
+
+ @import "custom/responsive.css.scss";
+
+ @import "components/toggle-classes.css.scss"; // remove?

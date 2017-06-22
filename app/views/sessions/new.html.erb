@@ -1,0 +1,32 @@
+<div class="page-module">
+	<div class="wraper">
+		<div class="container3">
+
+			<h1>Login</h1>
+
+			<%= form_for(:session, role: 'form', url: login_path) do |f| %>
+
+			<div class="form-group">
+				<%= f.label :username %><br/>
+				<%= f.text_field :username, placeholder: 'enter username', autofocus: true, class: 'form-control' %>
+			</div>
+
+			<div class="form-group">
+				<%= f.label :password %><br/>
+				<%= f.password_field :password, autocomplete: 'off', class: 'form-control' %>
+			</div>
+
+			<div class="form-group">
+				<%= f.submit 'Login', :class => 'btn btn-primary' %>
+			</div>
+			<% flash.each do |key, value| %>
+        <div class="flash-msg">
+          <%= value %>
+          <span class="glyphicon glyphicon-remove"></span>
+        </div>
+      <% end %>
+			<% end %>
+
+		</div>
+	</div>
+</div>

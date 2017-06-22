@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# slick carousel 
+# slick carousel
 gem 'jquery-slick-rails'
 
 # turbolinks
@@ -29,7 +29,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt'
+
+ gem 'paperclip'
+ gem 'aws-sdk', '~> 2.3'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -48,20 +51,13 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
   gem 'rails_real_favicon'
-end
-
-group :development do
 	gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
-
-
-

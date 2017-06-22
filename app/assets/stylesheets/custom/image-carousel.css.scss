@@ -1,0 +1,55 @@
+.slick-slider {
+  margin-bottom: 0px !important;
+}
+.image-carousel {
+    /*put background image bc of weird flashing :(*/
+    background-image: image-url("Vphoto-1");
+    background-size: cover;
+    width: 80%;
+    box-shadow: 0px 0px 60px rgba(black, 0.1);
+
+
+    div {
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+    }
+    .slick-next {
+        margin-right: 50px;
+    }
+    .slick-prev {
+        margin-left: 50px;
+        z-index: 80;
+    }
+}
+
+#photo-11 {background-image: image-url("Vphoto-1");}
+#photo-22 {background-image: image-url("Vphoto-2");}
+#photo-33 {background-image: image-url("Vphoto-3");}
+
+.caption {
+    position: relative;
+    width: 700px;
+    z-index: 20;
+    margin-top: 440px;
+    line-height: 2;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+
+    span {
+    background-color: rgba(169,250,0,.7);
+    padding: 10px;
+    }
+}
+
+@mixin image-carousel-responsive {
+  .caption {
+      font-size: 50px;
+      margin-top: -350px;
+  }
+  .image-carousel {
+    width: 100%;
+  }
+  .slick-next, .slick-prev {visibility:hidden}
+}

@@ -1,10 +1,7 @@
 class PostsController < ApplicationController
-  # http_basic_authenticate_with :name => "test", :password => "test"
-  # will encript later
   before_action :find_post, only:  [:show, :edit, :update, :destroy]
-  def index
-  	@post = Post.all.order("created_at DESC")
-  end
+  before_action :require_user, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:edit, :update, :destroy]
 
   def new
   	@post = Post.new
@@ -14,13 +11,12 @@ class PostsController < ApplicationController
   	@post = Post.new(post_params)
 
   	if @post.save
-  		redirect_to @post
+  		redirect_to dashboard_index_path
+      flash[:success] = 'new anouncement created'
   	else
   		render 'new'
+      flash[:danger] = 'something went wrong, try again'
   	end
-  end
-
-  def show
   end
 
   def edit
@@ -28,7 +24,8 @@ class PostsController < ApplicationController
 
   def update
   	if @post.update(post_params)
-  		redirect_to posts_path
+  		redirect_to dashboard_index_path
+      flash[:success] = 'anouncement updated'
   	else
   		render 'edit'
   	end
@@ -36,7 +33,8 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to dashboard_index_path
+    flash[:success] = 'anouncement deleted'
   end
 
 

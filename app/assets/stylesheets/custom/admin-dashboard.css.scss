@@ -1,0 +1,23 @@
+.admin-dashboard {
+  h1  {
+    padding-bottom: 0;
+  }
+  h2 {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  .glyphicon {
+    color: $color2;
+  }
+}
+.description {
+  color: rgba(black, 0.5);
+}
+
+@mixin admin-dash-responsive {
+  .admin-dashboard {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// disabling sticky scroll until I can figure out how to fix it
+.navv {
+    height: 163px;
+    @include rgbaBlue2(.8);
+    color: white;
+    /*margin-bottom: -200px;*/
+    /*comented out bc its producing weird margin glitch :/ */
+    z-index: 100;
+    position: relative;
+    display: block;
+}
+
+#logo-box {
+    display: inline-block;
+    width: 400;
+    margin-left: 15px;
+    margin-bottom: -25px;
+}
+
+.text-logo {
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#sub-text-logo {
+    font-size: 34px;
+    margin-top: -20px;
+    margin-left: 3px;
+}
+
+#left-nav {
+    display: inline-block;
+    float: right;
+    width: 400px;
+    padding: 10px;
+    line-height: 10px;
+}
+
+.nav-links {
+  marggin-left: 10px;
+    padding: 9px;
+    margin-top: 10px;
+    @include rgbaBlue2(.4);
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-left: 15px;
+    }
+}
+.login-link {float: right;}
+.admin-link {
+  float: right;color:
+  $color3 !important;
+  font-weight: bold;
+}
+.admin-link:hover {color: white !important}
+.login-link {text-decoration: underline;}
+.login-link:hover{color: $color3}
+
+.mobile-nav-button {
+    visibility: hidden;
+    position: fixed;
+    z-index: 957495729;
+    padding: 40px;
+}
+.glyphicon-align-justify {
+    font-size: 6em;
+}
+
+/*toggle class (for nav animation)*/
+.is-fixed {
+    position: fixed;
+    font-size: 25px;
+    margin-top: -110px;
+    width: 100%;
+    padding: 25px 0px 20px 0px;
+    @include rgbaBlue2(.9);
+    -webkit-animation: slideInDown 5s;
+    animation: slideInDown .2s;
+
+}
+
+.unfixed {
+    animation: slideInUp;
+}
+
+
+/*from animate.css*/
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@mixin navv-responsive {
+  .mobile-nav-button {
+      visibility: inherit;
+  }
+  #left-nav, .text-logo { visibility: hidden}
+  .navv {
+      visibility: hidden;
+      position: fixed;
+      margin-bottom: 0px;
+      height: 100%;
+      width: 500px;
+
+      display: flex;
+      flex-direction: column;
+  }
+  .nav-links {
+      margin-top: -20px;
+      padding-left: 20px;
+      background-color: transparent;
+
+      display: flex;
+      flex-direction: column;
+
+      a {
+          width: 400px;
+          font-size: 50px;
+          line-height: 3;
+          border-bottom: 1px solid grey;
+      }
+  }
+  .is-fixed {
+      animation: none;
+  }
+}

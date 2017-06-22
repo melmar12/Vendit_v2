@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: rgba(black, 0.005);
+}
+
+/* mixins */
+@mixin flex-box-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin btn-theme {
+    border: 2px solid $green1;
+    padding: 3px 5px 3px 5px;
+    margin-bottom: 20px;
+    color: $green1;
+    font-weight: 700;
+    background-color: white;
+}
+@mixin btn-hover {
+        color: white;
+        background-color: $green1;
+}
+
+
+
+
+/* variables */
+/*next time name them "accent, color1, color2 etc.. */
+$color1: #404e66; // light
+$color2: #25334d; //
+$color3: #a9fa00; // accent
+
+$green1: #a9fa00;
+$blue1: #404e66;
+@mixin rgbaBlue1($a) {background-color: rgba(63,77,101,$a);}
+$blue2: #25334d;
+@mixin rgbaBlue2($a) {background-color: rgba(37,51,77,$a);}
+
+
+
+/*Typography*/
+* {
+    font-family: Roboto, sans-serif;
+}
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    line-height: 0px;
+}
+p, a, li {
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    /* a:hover{} at bottom */
+}
+ul{
+    list-style-type: none;
+}
+.glyphicon {
+    color: $green1;
+    padding-right: 13px;
+}
+
+@mixin theme-responsive {
+  h1 {
+      font-size: 60px;
+      line-height: 1;
+  }
+  .glyphicon-ok {
+      font-size: 40px;
+      padding-right: 30px;
+  }
+  p, a {
+      font-size: 35px;
+      line-height: 1.8;
+  }
+
+  form {
+    font-size: 3em;
+  }
+  .form-control {
+    font-size: 1em;
+    height: 80px;
+    //line-height: 0;
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .btn {
+    font-size: 1em;
+    padding: 20px 30px;
+    border-radius: 26px;
+  }
+}

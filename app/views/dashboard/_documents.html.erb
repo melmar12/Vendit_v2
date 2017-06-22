@@ -1,0 +1,33 @@
+
+      <h2>Documents <span class="glyphicon glyphicon-folder-open"></span></h2>
+      <p class="description">documents will appear publicly in documents section</p>
+      <table class="table-style1">
+        <thead>
+          <tr>
+            <td>name</td>
+            <td>filename</td>
+            <td>last edited</td>
+            <td colspan="3"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <% if @documents.present? %>
+            <% @documents.each do |document| %>
+              <tr>
+                <td><%= document.name %></td>
+                <td><%= document.doc_file_name %></td>
+                <td width='200px'><%= document.updated_at.strftime("%a %l:%M%P %b %d, %Y")%></td>
+                <td><%= link_to 'view/download', document.doc.url %></td>
+                <td><%= link_to 'edit', edit_document_path(document) %></td>
+                <td><%= link_to 'delete', document, class: 'del', method: :delete, data: { confirm: 'Are you sure you want to delete?' } %></td>
+              </tr>
+            <% end %>
+          <% else %>
+            <tr>
+              <td>no documents</td>
+              <td></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <%= link_to '+ new document', new_document_path %>

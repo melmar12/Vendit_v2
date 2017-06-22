@@ -1,0 +1,96 @@
+/* add flex-box includes */
+
+@mixin much-response {
+
+    @include theme-responsive;
+    @include page-module-responsive;
+    @include table-responsive;
+    @include flash-msg-responsive;
+
+    @include navv-responsive;
+
+    // homepage
+    @include image-carousel-responsive;
+    @include testimonials-responsive;
+    @include services-responsive;
+
+    @include admin-dash-responsive;
+    @include parent-dashboard;
+
+    @include footer-responsive;
+
+
+}
+
+/* ~******~ Media Queries ~******~ */
+
+/* ----------- iPhone 6 ----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @include much-response;
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    @include much-response;
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @include much-response;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @include much-response;
+}
+
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    @include much-response;
+}
+
+/* ----------- Galaxy S4 ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    @include much-response;
+}
+
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+    @include much-response;
+}
+
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    @include much-response;
+}

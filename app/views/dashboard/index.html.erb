@@ -1,0 +1,20 @@
+<div class="page-module admin-dashboard">
+  <div class="wraper">
+    <div class="container2">
+
+      <% flash.each do |key, value| %>
+        <div class="flash-msg">
+          <%= value %>
+          <span class="glyphicon glyphicon-remove"></span>
+        </div>
+      <% end %>
+
+      <h1>Admin Dashboard</h1>
+
+      <%= render 'anouncements' %>
+      <%= render 'alerts' %>
+      <%= render 'documents' %>
+
+    </div>
+  </div>
+</div>

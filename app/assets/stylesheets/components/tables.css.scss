@@ -1,0 +1,30 @@
+.table-style1 {
+  width: 100%;
+  td {padding-right: 15px;}
+  td:last-child {
+    text-align: right;
+    padding-right: 0px;
+  }
+  tr {border-bottom: 1px solid rgba(black, 0.05);}
+  thead tr {
+    border: none;
+    color: $color1;
+    font-weight: 700;
+  }
+  .del {color: rgba(red, 0.5);}
+}
+
+@mixin table-responsive {
+  .table-style1 {
+    border-left:  1px solid rgba(black, 0.05);
+    border-top:  1px solid rgba(black, 0.05);
+    tr {
+      font-size: 30px;
+      border-top: 1px solid rgba(black, 0.05);
+    }
+    td {
+      border-right: 1px solid rgba(black, 0.05);
+      padding: 6px;
+    }
+  }
+}

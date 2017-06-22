@@ -5,7 +5,9 @@
   <%= render 'favicon' %>
 
    <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">     
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -15,56 +17,26 @@
 </head>
 <body>
 
- <div class="mobile-nav-button">
-        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-    </div>    
-    <div class="navv">
-      <div id="logo-box">
-            <h2 class="text-logo">Providence</h2>
-            <h2 class="text-logo" id="sub-text-logo">Treatment Center</h2>
+  <% if @alerts %>
+    <% @alerts.each do |alert| %>
+      <% if alert.show == true %>
+        <div class="alerts">
+          <p><%= alert.message %></p>
+          <p id="date"><%= alert.updated_at.strftime("%a %l:%M%P %b %d, %Y") %></p>
         </div>
-        <div id="left-nav">
-            <ul>
-                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span>(281) 208-1117</li>
-                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>info@providencetreatmentcenter.com</li>
-            </ul>
-        </div>
-        <div class="nav-links">
-          <%= link_to 'Home', root_path, method: :get %>
-          <%= link_to 'About Us', root_path + "#about", method: :get %>
-          <%= link_to 'Services', root_path + "#service", method: :get %>
-          <%= link_to 'Announcements', parent_parentpage_path + "#anounce", method: :get %>
-          <%= link_to 'Resources', parent_parentpage_path + "#resource", method: :get %>
-          <a class="" href="#contact">Contact Us</a>
-        </div>
-    </div>
+      <% end %>
+    <% end %>
+  <% end %>
 
-<%= yield %>
+  <%= render 'shared/navv' %>
 
-  <div id="contact" class="footer">
-        <h1>CONTACT US</h1>
-        <div class="contact-info">
-                <ul>
-                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(281) 208-1117</li>
-                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@providencetreatmentcenter.com</li>
-                    <li><br>311 Present Street
-                Missouri City<br> TX  77489</li>
-                </ul>
-        </div>
-        <div id="map"></div>
-         <div class="copyright randomxx">
-            <p><!-- <%= link_to 'Manage', posts_path %> - -->Website Created by <a href="http://www.melissamartinez.me">Melissa Martinez</a> - Copyright © 2016 Providence Treatment Center</p>    
-        </div>
-    </div>
+  <%= yield %>
+
+  <%= render 'shared/footer' %>
 
 
 
 
   <%= javascript_include_tag 'custom-scripts' %>
-
-   <!-- google maps --> 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6J6WFaD2V_bYZNIN6499yEtedZA5qW50&callback=initMap">
-    </script> 
 </body>
 </html>

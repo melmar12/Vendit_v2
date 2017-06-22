@@ -1,0 +1,29 @@
+.parent-dashboard {
+  .anouncements-table {
+    td {
+      padding: 20px 0px;
+    }
+    td:last-child {
+      color: rgba(black, 0.4);
+    }
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .glyphicon {
+    color: $color2;
+  }
+  .doc-name {
+    color: $color1;
+    font-weight: bold;
+  }
+}
+
+@mixin parent-dashboard {
+  .parent-dashboard {
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
