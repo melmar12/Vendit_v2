@@ -21,6 +21,3 @@ This is a website for a special needs school. Their last website was a static si
 - Heroku
 - SASS
 - Javascript  
-
-
-This project has come a long way.. view the first version [here](https://github.com/melmar12/Vendit)  
